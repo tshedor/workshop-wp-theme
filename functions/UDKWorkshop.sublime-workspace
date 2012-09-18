@@ -312,7 +312,11 @@
 	},
 	"file_history":
 	[
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/config.rb",
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/loop-single.php",
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/fonts.scss",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/global.scss",
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/single.scss",
 		"/Users/tshedor/Documents/Local Server/kansan/assets/css/sass/variables.scss",
 		"/Users/tshedor/Documents/Local Server/kansan/wp-content/themes/ProdTheme/functions.php",
 		"/Users/tshedor/Documents/Local Server/kansan/wp-content/themes/ProdTheme/functions/post_functions/tinymce/editor_plugin.js",
@@ -435,11 +439,7 @@
 		"/Users/tshedor/Documents/Remote Server/brockton/interactivedept/projects/ess/wp/wp-content/themes/ESS/footer.php",
 		"/private/var/folders/0z/dnhc4q5s7sndc3fq4jddhnp80000gn/T/cf9546d2-f4f3-4e68-98c3-d56a8b556ae3/var/www/kansan.com/htdocs/wp-content/themes/DANK/single.php",
 		"/Users/tshedor/Documents/Local Server/brockton/wp-content/themes/ESS/home.php",
-		"/Users/tshedor/Documents/Local Server/brockton/wp-content/themes/ESS/category-staff.php",
-		"/Users/tshedor/Documents/Local Server/brockton/wp-content/themes/ESS/config.rb",
-		"/Users/tshedor/Documents/Local Server/brockton/wp-content/themes/ESS/archive.php",
-		"/Users/tshedor/Documents/Local Server/brockton/wp-content/themes/ESS/css/sass/style.scss",
-		"/private/var/folders/0z/dnhc4q5s7sndc3fq4jddhnp80000gn/T/cf9546d2-f4f3-4e68-98c3-d56a8b556ae3/var/www/kansan.com/htdocs/media/archives/video/Bechard_Coaching2.m4v"
+		"/Users/tshedor/Documents/Local Server/brockton/wp-content/themes/ESS/category-staff.php"
 	],
 	"find":
 	{
@@ -461,6 +461,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hr",
 			"print",
 			"icon",
 			".entry",
@@ -587,8 +588,7 @@
 			"footer-menu",
 			"pvideo",
 			"width:",
-			"hover",
-			"img/"
+			"hover"
 		],
 		"highlight": false,
 		"in_selection": false,

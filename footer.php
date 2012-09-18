@@ -29,7 +29,7 @@
 		<div class="span12">
 			<div class="footer">
 				<div class="row-fluid">
-					<?php wp_nav_menu(array( 'theme_location' => 'global_menu', 'container' => '', 'items_wrap' => '<ul class="global-links hidden-phone clearfix">%3$s</ul>', )); ?>
+					<?php wp_nav_menu(array( 'theme_location' => 'footer_menu', 'container' => '', 'items_wrap' => '<ul class="global-links hidden-phone clearfix">%3$s</ul>', )); ?>
 				</div>
 				<div class="row-fluid">
 					<div class="span6">

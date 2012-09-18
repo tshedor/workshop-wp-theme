@@ -141,7 +141,7 @@ a:hover { text-decoration: none; }
 .aligncenter { margin: 0 auto; }
 
 /* line 55, sass/global.scss */
-.copyright { text-align: right; color: #ececec; font-size: 14.4px; margin-top: 15px; }
+.copyright { text-align: right; color: #b9b9b9; font-size: 14.4px; margin-top: 15px; }
 
 /* line 61, sass/global.scss */
 .row-fluid { text-shadow: rgba(250, 250, 250, 0.49609) 0px 1px 0px; }
