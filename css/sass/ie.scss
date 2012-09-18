@@ -1,0 +1,23 @@
+/*********** IE ************/
+
+.ie {
+	.ie-warning {
+		overflow:hidden;
+		display:block;
+	}
+	&.ie6 {
+		display:none;
+		.ie6-warning {
+			display:block;
+		}
+	}
+	&.ie7 {
+
+	}
+	&.ie8 {
+
+	}
+	&.ie9 {
+
+	}
+}

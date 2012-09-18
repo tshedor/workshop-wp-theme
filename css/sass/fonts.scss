@@ -1,0 +1,46 @@
+/******** FONTS ************/
+$size-value: 16px;
+
+@mixin dom {
+	font-family:'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+@mixin sub {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+@mixin body {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-weight:400;
+}
+@mixin cond {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-weight:700;
+	text-transform:uppercase;
+}
+@mixin light {
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+	font-weight:300;
+}
+@mixin fs-xsmall($value:$size-value) {
+	font-size: $value * 0.75;
+}
+@mixin fs-small($value:$size-value) {
+	font-size: $value * 0.8;
+}
+@mixin fs-medium($value:$size-value) {
+	font-size: $value * 0.9;
+}
+@mixin fs($value:$size-value) {
+	font-size: $value;
+}
+@mixin fs-lg($value:$size-value) {
+	font-size: $value * 1.2;
+}
+@mixin fs-xlg($value:$size-value) {
+	font-size: $value * 1.6;
+	line-height:26px;
+}
+@mixin fs-xxlg($value:$size-value) {
+	font-size: $value * 2.4;
+}

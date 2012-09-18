@@ -1,0 +1,95 @@
+/******** VARIABLES ************/
+$blue: #358ccb;
+$blue_rgb: 53, 140, 203;
+$light_blue: lighten($blue, 30%);
+$dark_blue:  darken($blue, 30%);
+$gray: #ececec;
+$lightest_gray: lighten($gray, 18%);
+$light_gray: lighten($gray, 28%);
+$dark_gray: darken($gray, 20%);
+$darkest_gray: darken($gray, 64%);
+$orange: #E29532;
+$aside_bg:#f5f5f5;
+$std-margin: 15px;
+$lg-margin: 25px;
+$std-padding:20px;
+@mixin std-hover($color:inherit) {
+	@include single-transition(all, 0.2s, linear);
+	&:hover{
+		color:$color;
+	}
+}
+@mixin txt-shadow($opacity:0.496094){
+	@include text-shadow(rgba(250, 250, 250, $opacity) 0px 1px 0px);
+}
+@mixin std-no-hover {	
+	@include single-transition(all, 0s, linear);
+}
+@mixin alt-hover {
+	color:$blue;
+	@include std-hover($light_blue);
+}
+@mixin no-list {
+	margin-left:0px;
+	list-style:none;
+}
+@mixin auto-img {
+	width:100%;
+	height:auto;
+}
+@mixin soft-gradient($color: $blue) {
+	background-color: lighten($color, 28%);
+	@include filter-gradient(lighten($color, 28%), $color, vertical);
+	$experimental-support-for-svg: true;
+	@include background-image(linear-gradient(top, lighten($color, 28%) 0%,$color 100%));
+}
+@mixin bevel($col: #4d4d4d) {
+	@include text-shadow(0px 1px 0px $col);
+}
+@mixin emboss {
+	@include text-shadow(-1px -1px 1px #fff, 1px 1px 1px #000);
+}
+@mixin spare-the-children($pos: left, $prop: both, $border: no) {
+	@if $pos == left {
+		&:first-child{
+			@if $prop == margin { margin-left:0px; }
+			@if $prop == padding { padding-left:0px; }
+			@if $border == border { border-left:0px; }
+			@if $prop == both { margin-left:0px; padding-left:0px; }
+		}
+		&:last-child{
+			@if $prop == margin { margin-right:0px; }
+			@if $prop == padding { padding-right:0px; }
+			@if $border == border { border-right:0px; }
+			@if $prop == both { margin-right:0px; padding-right:0px; }
+		}
+	}
+	@if $pos == right {
+		&:first-child{
+			@if $prop == margin { margin-right:0px; }
+			@if $prop == padding { padding-right:0px; }
+			@if $border == border { border-right:0px; }
+			@if $prop == both { margin-right:0px; padding-right:0px; }		
+		}
+		&:last-child{
+			@if $prop == margin { margin-left:0px; }
+			@if $prop == padding { padding-left:0px; }
+			@if $border == border { border-left:0px; }
+			@if $prop == both { margin-left:0px; padding-left:0px; }
+		}
+	}
+	@if $pos == every {
+		&:first-child{
+			@if $prop == margin { margin:0px; }
+			@if $prop == padding { padding:0px; }
+			@if $border == border { border:0px; }
+			@if $prop == both { margin:0px; padding:0px; }		
+		}
+		&:last-child{
+			@if $prop == margin { margin:0px; }
+			@if $prop == padding { padding:0px; }
+			@if $border == border { border:0px; }
+			@if $prop == both { margin:0px; padding:0px; }
+		}
+	}
+}

@@ -1,0 +1,189 @@
+/********** SIDEBAR ********/
+#right-sidebar {
+	border-left:1px solid $lightest_gray;
+	@include box-sizing(border-box);
+}
+.tabbable {
+	margin-top:$std-margin;
+}
+.nav-tabs, .nav-tabs2 {
+	@include no-list;
+	border-bottom:1px solid #ddd;
+	li {
+		@include inline-block;
+		text-align:center;
+		margin-bottom:5px;
+		&.active {
+			position: relative;
+			color:white;
+			@include border-radius(0px);
+			a {
+				color:white;
+				&:hover {
+					color:white;
+				}
+			}
+			&:after {
+				top: 118%;
+				border: solid transparent;
+				content: " ";
+				height: 0;
+				width: 0;
+				position: absolute;
+				pointer-events: none;
+			}
+			&:after {
+				border-top-color: $blue;
+				border-width: 12px;
+				left: 50%;
+				margin-left: -12px;
+			}
+		}
+		a {
+			padding:4px 10px;
+			&:hover, &:active {
+				@include std-no-hover;
+			}
+			&:hover {
+				color:$blue;
+			}
+		}
+	}
+	text-align:center;
+	@include cond;
+}
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs2 > .active > a, .nav-tabs2 > .active > a:hover {
+	background-color:$blue;
+	border:0px;
+}
+.nav-tabs2 > li > a, .nav-pills2 > li > a {
+	padding-left:12px;
+	margin-right:2px;
+}
+.tabbed-widget-listings {
+	list-style:none;
+	padding:$std-padding/2;
+	li {
+		padding:$std-padding/2 0px;
+		border-bottom:1px solid $lightest_gray;
+		&:last-child {
+			border-bottom:0px;
+		}
+		h3 {
+			font-weight:600;
+			@include fs;
+			line-height:22px;
+			margin-bottom:$std-margin/4;
+		}
+		img {
+			float:left;
+			width:45px!important;
+			height:45px!important;
+			margin-right:15px;
+			border:3px solid $lightest_gray;
+			@include box-sizing(border-box);
+			margin-bottom:10px;
+		}
+		.meta {
+			font-size:13px;
+			font-weight:400;
+			color:$gray;
+			margin-bottom:0px;
+			@include body;
+			padding-bottom:0px;
+			border-bottom:0px;
+			margin-bottom:0px!important;
+			.date {
+				padding-right:4px;
+				display:inline;
+				float:none;
+				&:after {
+					color:$light_gray;
+					content:"\7c";
+					padding:0px 2px;
+				}
+			}
+			.author {
+				color:$gray;
+				font-weight:600;
+			}
+		}
+	}
+}
+.comment {
+	padding:$std-padding/2 0px;
+	width:90%;
+	margin:0 auto;
+}
+.widget, #widget {
+	padding:$std-padding*1.4 $std-padding/2;
+	@include fs-medium;
+	color:$gray;
+	border-top:1px solid $light_gray;
+	.widget-title {
+		text-align:left;
+		margin-bottom:$std-margin/2;
+		span {
+			background:$blue;
+			background-color:$blue;
+			color:white;
+			padding:$std-padding/4;
+			@include cond;
+			@include fs;
+			line-height:24px;
+		}
+	}
+}
+footer .widget, footer #widget {
+	h2 {
+		color:$blue;
+		text-transform:lowercase;
+		text-align:right;
+		border-bottom:1px solid $gray;
+		padding:3px;
+	}
+	ul {
+		margin-top:8px;
+		li {
+			list-style:none; 
+			padding-left:8px;
+			padding-bottom:6px;
+			@include fs-medium;
+			a { 
+				color:$dark_gray;
+			}
+			&:before {
+				content:'\bb'; 
+				font-size:12px;
+				color:#555;
+				margin-right:10px;
+			}
+		}
+	}
+	&:last-child { 
+		border-bottom:none; 
+	}
+}
+.nested-meta {
+	ul {
+		@include no-list;
+		@include fs-medium;
+		@include cond;
+		text-align:right;
+		li {
+			color:$gray;
+			margin:$std-margin/2 0px;
+			a {
+				color:$gray;
+				@include std-hover($blue);
+			}
+		}
+	}
+	h2 {
+		background:$blue;
+		padding:3px;
+		color:white;
+		@include fs-medium;
+		line-height:18px;
+	}
+}

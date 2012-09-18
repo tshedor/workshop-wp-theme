@@ -1,0 +1,264 @@
+/******** SINGLE ************/
+#article-page {
+	padding:$std-margin 0px;
+	@include body;
+}
+.category, .tag_list { 
+	@include dom;
+	text-transform:uppercase; 
+	@include fs-small;
+	font-weight:700;
+	span {
+		background:lighten($blue, 8%);
+		padding:2px 6px;
+		color:white;
+		margin:0px 4px;
+		@include border-radius(4px);
+		a {
+			color:white;
+			@include std-hover($dark_blue);
+		}
+	}
+}
+.category a {
+	color:$light_blue;
+	@include std-hover($blue);
+}
+.social-runner {
+	display:none;
+	.social-network-item {
+		float:left;
+		padding:0px $std-padding;
+		width:80px;
+		&:first-child {
+			padding-left:0px;
+		}
+	}
+}
+.post h1 {
+	margin:30px 0px;
+	font-weight:300;
+	color:$blue;}
+.meta {
+	margin-bottom:$lg-margin;
+}
+.post-content {
+	@include box-sizing(border-box);
+	border-left:1px solid $lightest_gray;
+}
+.post {	
+	padding:20px;
+	padding-top:0px;
+	#meta { 
+		@include no-list;
+		@include fs-small; 
+		color:$gray;
+		@include sub;
+		margin-bottom:$std-margin;
+		li {
+			@include inline-block;
+			&:after {
+				content:'\7C';
+				padding:0px 2px;
+			}
+			&:last-child:after {
+				content:'';
+			}
+		}
+	}
+	.entry {
+		@include fs-small;
+		p {
+			@include fs-medium;
+			@include body; 
+			line-height:22px; 
+			-webkit-margin-before:0px;
+			-webkit-margin-after:0px;
+			margin:22px 0px;
+			&:first-child {
+				&:first-letter {
+					text-transform:uppercase;
+					padding-right:2px;
+					@include fs-xxlg;
+					float:left; 
+					margin-top:9px; 
+					margin-right:5px; 
+					color:$dark_gray;
+				}
+			}
+			&.final-byline {
+				font-style:italic;
+			}
+		}
+		blockquote {
+			p:first-child:first-letter{
+				text-transform:none;
+				padding-right:0px;
+				font-size:inherit;
+				float:inherit;
+				margin-top:inherit;
+				margin-right:inherit;
+			}
+		}
+	}
+	.tag-heading {
+		text-transform:uppercase;
+		color:$gray;
+		@include dom;
+		font-weight:bold;
+		float:left;
+		padding-right:5px;
+	}
+}
+.post_excerpt { 
+	h3 { 
+		color:inherit; 
+		a { 
+			color:$blue;
+		}
+	}
+}
+
+/********* COMMENTS ************/
+
+
+#comment-area {
+	padding:20px;
+	.comment-head {
+		text-align:right;
+		@include dom;
+		text-transform:uppercase;
+		color:$gray;
+		@include fs-lg;
+		margin-bottom:-18px;
+	}
+	.logged-in {
+		text-transform:uppercase;
+		color:$gray;
+		margin-top:30px;
+		@include fs-small;
+			a {
+				color:$light_blue;
+			}
+	}
+	ul.commentlist {
+		@include no-list;
+		li {
+			padding:15px 0px;
+			margin:10px 0px;
+		}
+	}
+}
+.comment-meta {
+	img {
+		float:left;
+		margin-right:8px;
+	}
+	background:#eee;
+	padding:8px;
+	text-transform:uppercase;
+	color:$blue;
+	@include dom;
+	vertical-align:top;
+	.comment-date {
+		color:$gray;
+		@include fs-small;
+		margin-top:-6px;
+		line-height:19px;
+	}
+	.comment-author {
+		top:-2px;
+		position:relative;
+	}
+}
+.comment-text {
+	padding-left:55px;
+	margin-top:15px;
+	@include fs-medium;
+}
+.related-bar {
+	padding:20px;
+	img {
+		width:100%;
+		max-height:90px;
+		border:4px solid $lightest_gray;
+		@include box-sizing(border-box);
+	}
+	@include cond;
+}
+.gallery-item {
+	.wp-caption-text {
+		display:none;
+	}
+}
+#tm_month, #tm_day {
+	display:none;
+}
+.page404 h1 {
+	font-size:172px!important;
+	text-align:center!important;
+	height:160px;
+	margin-top:57px;
+}
+
+/******* FEATURES PAGE *********/
+.centered {
+	text-align:center;
+	img {
+		margin:0 auto;
+	}
+}
+.feature-page {
+	@include fs-medium;
+	img {
+		border:1px solid $lightest_gray;
+		@include box-shadow(1px 1px 6px 0px #868686);
+		&.no-shadow {
+			@include box-shadow(none);
+		}
+	}
+	.row-fluid {
+		margin:$std-margin*3 0px;
+	}
+	.feature-page-lead {
+		margin:$std-margin*4 0px;
+		h1 {
+			text-align:center;
+			color:$dark_gray;
+			text-transform:none;
+			@include fs-xxlg;
+			span {
+				color:$blue;
+			}
+		}
+	}
+	h2 {
+		text-transform:none;
+		span {
+			color:$blue;
+		}
+	}
+	h3 {
+		text-transform:uppercase;
+		@include fs-lg;
+		font-weight:bold;
+		@include cond;
+	}
+	.still-here {
+		color:$gray;
+	}
+	.lingering {
+		div {
+			text-align:justify;
+		}
+		h2 {
+			@include fs-lg;
+		}
+	}
+	.coda {
+		p {
+			margin:$std-margin*2 0px;
+			line-height:24px;
+		}
+	}
+}

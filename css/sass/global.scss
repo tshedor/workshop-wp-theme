@@ -1,0 +1,283 @@
+/******** GLOBAL ************/
+
+/********* GENERAL ***********/
+
+h1, h2, h3, h4, h5, h6, h7, h8 { 
+	@include dom; 
+	color: $blue; 
+	font-weight:normal; 
+	@include txt-shadow(1);
+}
+h2 {
+	color:darken($blue,10%);
+	@include cond;
+	font-weight:300;
+	@include fs-xlg;
+	margin:20px 0px;
+}
+h3 {
+	color:$gray;
+}
+a h1, a h2, a h3, a h4, a h5, a h6 {
+	@include std-hover($blue);
+}
+body { 
+	@include fs;
+	@include sub;
+	background-color:#f2f2f2;
+}
+div.clear { 
+	clear:both; 
+}
+a {
+	color:$blue;
+	@include std-hover($light_blue);
+	&:hover {
+		text-decoration:none;
+	}
+	text-decoration:none!important;
+}
+
+.alignleft {
+	float:left;
+	margin-right:$std-margin;
+}
+.alignright {
+	float:right;
+	margin-left:$std-margin;
+}
+.aligncenter {
+	margin:0 auto;
+	margin-left:25%;
+}
+.copyright {
+	text-align:right; 
+	color:$gray; 
+	@include fs-medium;
+	margin-top:$std-margin;
+}
+.row-fluid {
+	@include txt-shadow;
+}
+.footer {
+	padding:$std-padding;
+	margin:$lg-margin*1.5 0px;
+	h2 {
+		color:$blue;
+		text-transform:lowercase;
+	}
+	.link-list {
+		@include no-list;
+		li {
+			width:18%;
+			margin-right:2%;
+			float:left;
+			text-align:center;
+			a {
+				color:$blue;
+				@include std-hover($gray);
+				@include cond;
+				@include fs;
+				border-bottom:4px solid $dark_gray;
+				text-align:center;
+			}
+			ul.sub-menu {
+				@include no-list;
+				margin-top:$std-margin;
+				li {
+					width:100%;
+					text-align:left;
+					a {
+						@include alt-hover;
+						color:$gray;
+						@include cond;
+						border-bottom:0px;
+					}
+				}
+			}
+		}
+		ul {
+			@include no-list;
+			li {
+				width:auto;
+			}
+		}
+	}
+}
+table {
+	width:100%;
+	tr {
+		padding:$std-padding/4 0px;
+		&:nth-child(even){
+			background:lighten($lightest_gray,2%);
+			color:lighten($dark_gray,8%);
+		}
+		td {
+			padding:$std-padding/4;
+		}
+	}
+}
+hr {
+	border-color:$light_gray;
+	border-bottom:0px;
+}
+
+/*********** SKYLINE ***********/
+
+.skyline {
+	background-image:url('images/skyline.png');
+	background-position:top center; 
+	background-repeat:no-repeat;
+	background-size:100% auto; 
+	height:91px; 
+	width:100%;
+	position:relative;
+	z-index:300;
+	&:after{
+		content:'  ';
+		background:white;
+		height:40px!important;
+		display:block;
+		position:relative;
+		top:91px;
+	}
+	margin-bottom:74px;
+}
+.cat_selection {
+	@include no-list;
+	text-align:center;
+	background:white;
+	z-index:444444;
+	color:$blue;
+	@include dom;
+	text-transform:uppercase;
+	padding:12px 0px;
+	max-height:20px;
+	@include fs-medium;
+	top:-78px;
+	position:relative;	
+	span {
+		cursor:pointer;
+	}
+	ul.col_select_hover {
+		@include no-list;
+		@include opacity(0);
+		position:absolute;
+		z-index:5555555;
+		text-align:left;
+		width:120px;
+		@include border-radius(7px);
+		background:white;
+		padding:$std-padding/2;
+		top:-42px;
+		left:200px;
+		border: 2px solid $lightest_gray;
+		text-transform:capitalize;
+		a {
+			color:$dark_gray;
+			@include std-hover($blue);
+		}
+		li {
+			padding:2px 0px;
+		}
+		&:after, &:before {
+			right: 100%;
+			border: solid transparent;
+			content: " ";
+			height: 0;
+			width: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+		&:after {
+			border-right-color: #ffffff;
+			border-width: 14px;
+			top: 27%;
+			margin-top: -14px;
+		}
+		&:before {
+			border-right-color: $lightest_gray;
+			border-width: 18px;
+			top: 27%;
+			margin-top: -18px;
+		}
+	}
+}
+
+/******** ALERTS AND WARNINGS ********/
+
+.notice {
+	display:none;
+	@include fs-medium;
+}
+.alert {
+	background:#B64040;
+	padding:6px;
+	@include border-radius(4px);
+	@include box-shadow(1px 2px 2px 1px #5a2a2a);
+	strong {
+		color:#000;
+	}
+	a {
+		color:$lightest_gray;
+		@include std-hover($light_blue)
+	}
+	.close {
+		color:white;
+		@include text-shadow(none);
+		@include opacity(0.9);
+		top:-4px;
+		position:relative;
+	}
+	&.alert-error {
+		background:#B64040;
+	}
+}
+.warning {
+	.alert {
+		background:#F1E234!important;
+		a {
+			color:$blue;
+			@include std-hover($light_blue)
+		}
+	}
+}
+
+
+#SearchInput {	
+	input::-webkit-input-placeholder {
+		color:$lightest_gray;
+	}
+	input:-moz-placeholder {
+	    color:$lightest_gray;
+	}
+	background:$gray;
+	color:white;
+	@include border-radius(12px);
+	width:110px;
+	&:hover{
+		@include box-shadow(none);
+	}
+	background:$gray url('images/search.png') right center no-repeat;
+	padding-right:4px;
+}
+.meta {
+	height:auto;
+	@include dom;
+	@include fs-medium;
+	padding-bottom:$std-padding/2;
+	border-bottom:1px solid $lightest_gray;
+	margin-bottom:$std-padding/2 !important;
+	color:$gray;
+	.date {
+		@include inline-block;
+		float:right;
+		@include body;
+	}
+}
+
+.no-left-margin {
+	margin-left:0px;
+	top:$std-margin;
+	position:relative;
+}
