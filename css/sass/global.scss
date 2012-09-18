@@ -16,13 +16,13 @@ h2 {
 	margin:20px 0px;
 }
 h3 {
-	color:$gray;
+	color:$orange;
 }
 a h1, a h2, a h3, a h4, a h5, a h6 {
 	@include std-hover($blue);
 }
 body { 
-	@include fs;
+	@include fs-lg;
 	@include sub;
 	background-color:#f2f2f2;
 }
@@ -48,7 +48,6 @@ a {
 }
 .aligncenter {
 	margin:0 auto;
-	margin-left:25%;
 }
 .copyright {
 	text-align:right; 
