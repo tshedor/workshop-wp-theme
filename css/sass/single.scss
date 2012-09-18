@@ -121,8 +121,10 @@
 		}
 	}
 }
-.story-meta {
+.entry-meta {
 	@include fs-medium;
+	color:$dark_gray;
+	margin:15px 0px;
 }
 
 /********* COMMENTS ************/

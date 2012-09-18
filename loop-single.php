@@ -3,8 +3,10 @@
 				<div class="entry">
 				<?php the_content(); ?>
 			</div>
+			<?php if(!is_page()){ ?>
 			<div class="entry-meta">
 				<?php echo get_the_date('M. j, Y') ?> | <?php the_category(', '); ?> | <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
 			</div>
+			<?php } ?>
 				<hr />
 </article>
