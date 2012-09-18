@@ -373,7 +373,7 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 /* line 94, sass/single.scss */
 .post .entry blockquote p:first-child:first-letter { text-transform: none; padding-right: 0px; font-size: inherit; float: inherit; margin-top: inherit; margin-right: inherit; }
 /* line 104, sass/single.scss */
-.post ul { margin-left: 12px; }
+.post ul { margin-left: 45px; }
 /* line 107, sass/single.scss */
 .post .tag-heading { text-transform: uppercase; color: #ececec; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; font-weight: bold; float: left; padding-right: 5px; }
 
