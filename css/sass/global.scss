@@ -18,11 +18,14 @@ h2 {
 h3 {
 	color:$orange;
 }
+h4 {
+	color:$dark_blue;
+}
 a h1, a h2, a h3, a h4, a h5, a h6 {
 	@include std-hover($blue);
 }
 body { 
-	@include fs-lg;
+	@include fs;
 	@include sub;
 	background-color:#f2f2f2;
 }
@@ -117,90 +120,8 @@ table {
 	}
 }
 hr {
-	border-color:$light_gray;
+	border-color:$dark_gray;
 	border-bottom:0px;
-}
-
-/*********** SKYLINE ***********/
-
-.skyline {
-	background-image:url('images/skyline.png');
-	background-position:top center; 
-	background-repeat:no-repeat;
-	background-size:100% auto; 
-	height:91px; 
-	width:100%;
-	position:relative;
-	z-index:300;
-	&:after{
-		content:'  ';
-		background:white;
-		height:40px!important;
-		display:block;
-		position:relative;
-		top:91px;
-	}
-	margin-bottom:74px;
-}
-.cat_selection {
-	@include no-list;
-	text-align:center;
-	background:white;
-	z-index:444444;
-	color:$blue;
-	@include dom;
-	text-transform:uppercase;
-	padding:12px 0px;
-	max-height:20px;
-	@include fs-medium;
-	top:-78px;
-	position:relative;	
-	span {
-		cursor:pointer;
-	}
-	ul.col_select_hover {
-		@include no-list;
-		@include opacity(0);
-		position:absolute;
-		z-index:5555555;
-		text-align:left;
-		width:120px;
-		@include border-radius(7px);
-		background:white;
-		padding:$std-padding/2;
-		top:-42px;
-		left:200px;
-		border: 2px solid $lightest_gray;
-		text-transform:capitalize;
-		a {
-			color:$dark_gray;
-			@include std-hover($blue);
-		}
-		li {
-			padding:2px 0px;
-		}
-		&:after, &:before {
-			right: 100%;
-			border: solid transparent;
-			content: " ";
-			height: 0;
-			width: 0;
-			position: absolute;
-			pointer-events: none;
-		}
-		&:after {
-			border-right-color: #ffffff;
-			border-width: 14px;
-			top: 27%;
-			margin-top: -14px;
-		}
-		&:before {
-			border-right-color: $lightest_gray;
-			border-width: 18px;
-			top: 27%;
-			margin-top: -18px;
-		}
-	}
 }
 
 /******** ALERTS AND WARNINGS ********/
