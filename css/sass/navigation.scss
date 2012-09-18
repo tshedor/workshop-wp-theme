@@ -131,8 +131,9 @@
 			}
 			float:left;
 			padding:7px 6px;
-			@include cond;
-			@include fs;
+			@include fs-medium;
+			font-weight:300;
+			letter-spacing:2px;
 			a {
 				color:#9C9C9C;
 				&:hover {
