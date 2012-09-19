@@ -312,13 +312,15 @@
 	},
 	"file_history":
 	[
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/header.php",
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/single.php",
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/loop-single.php",
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/single.scss",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/functions.php",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/footer.php",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/navigation.scss",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/global.scss",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/archive.php",
-		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/single.scss",
-		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/loop-single.php",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/config.rb",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/fonts.scss",
 		"/Users/tshedor/Documents/Local Server/kansan/assets/css/sass/variables.scss",
@@ -437,9 +439,7 @@
 		"/Users/tshedor/Documents/Remote Server/brockton/interactivedept/projects/ess/wp/wp-content/themes/ESS/sidebar.php",
 		"/private/var/folders/0z/dnhc4q5s7sndc3fq4jddhnp80000gn/T/cf9546d2-f4f3-4e68-98c3-d56a8b556ae3/var/www/kansan.com/htdocs/wp-content/themes/DANK/archive.php",
 		"/private/var/folders/0z/dnhc4q5s7sndc3fq4jddhnp80000gn/T/cf9546d2-f4f3-4e68-98c3-d56a8b556ae3/var/www/kansan.com/htdocs/wp-content/themes/DANK/author.php",
-		"/Users/tshedor/Documents/Remote Server/brockton/interactivedept/projects/ess/wp/wp-content/themes/ESS/category-testimonials.php",
-		"/Users/tshedor/Documents/Remote Server/brockton/interactivedept/projects/ess/wp/wp-content/themes/ESS/header.php",
-		"/private/var/folders/0z/dnhc4q5s7sndc3fq4jddhnp80000gn/T/cf9546d2-f4f3-4e68-98c3-d56a8b556ae3/var/www/kansan.com/htdocs/wp-content/themes/DANK/page-ratecard.php"
+		"/Users/tshedor/Documents/Remote Server/brockton/interactivedept/projects/ess/wp/wp-content/themes/ESS/category-testimonials.php"
 	],
 	"find":
 	{
@@ -461,6 +461,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"width: 80px",
+			"span6",
+			"row-fluid clearfix",
+			"width:40px",
+			"width: 40px",
 			"entry",
 			"ul",
 			"copyr",
@@ -583,12 +588,7 @@
 			"2.5",
 			"#",
 			"../",
-			"#",
-			"img",
-			"images",
-			"blue",
-			"custom_repeatable",
-			"footer-menu"
+			"#"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -596,6 +596,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"width: 160px",
+			"span6 code-block",
+			"row-fluid clearfix code-block",
+			"width: 80px",
 			"",
 			"$prefix.$sc.$field['id']",
 			"",
