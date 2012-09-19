@@ -270,3 +270,16 @@
 		}
 	}
 }
+
+.code-block {
+	p {
+		&:first-child {
+			&:first-letter {
+				@include fs;
+			}
+		}
+	}
+}
+:not(pre) > code[class*="language-"] {
+	color:#905;
+}
