@@ -1,10 +1,10 @@
-<article class="post clearfix" id="<?php the_ID(); ?>">
+<article class="post" id="<?php the_ID(); ?>">
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><h1><?php the_title(); ?></h1></a>
-				<div class="entry">
+				<div class="entry clearfix">
 				<?php the_content(); ?>
 			</div>
 			<?php if(!is_page()){ ?>
-			<div class="entry-meta">
+			<div class="entry-meta clearfix">
 				<?php echo get_the_date('M. j, Y') ?> | <?php the_category(', '); ?> | <?php comments_number('0 Comments', '1 Comment', '% Comments'); ?>
 			</div>
 			<?php } ?>
