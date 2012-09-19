@@ -90,6 +90,15 @@
 				font-style:italic;
 			}
 		}
+		.code-block {
+			p {
+				&:first-child {
+					&:first-letter {
+						@include fs;
+					}
+				}
+			}
+		}
 		blockquote {
 			p:first-child:first-letter{
 				text-transform:none;
@@ -267,16 +276,6 @@
 		p {
 			margin:$std-margin*2 0px;
 			line-height:24px;
-		}
-	}
-}
-
-.code-block {
-	p {
-		&:first-child {
-			&:first-letter {
-				@include fs;
-			}
 		}
 	}
 }
