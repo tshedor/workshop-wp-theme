@@ -95,6 +95,11 @@
 				&:first-child {
 					&:first-letter {
 						@include fs;
+						margin:0px;
+						float:inherit;
+						padding:0px;
+						text-transform:inherit;
+						color:inherit;
 					}
 				}
 			}
