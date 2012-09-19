@@ -39,7 +39,7 @@
 						font-weight:400;
 						color:$dark_gray;
 						@include std-hover($blue);
-						@include fs;
+						@include fs; 
 					}
 					&.current-menu-item a, .current-post-ancestor a, .current-menu-parent a, .current-post-parent a {
 						color:$orange;
