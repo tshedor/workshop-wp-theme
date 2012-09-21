@@ -465,6 +465,10 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 /* line 287, sass/single.scss */
 :not(pre) > code[class*="language-"] { color: #905; }
 
+/* EXAMPLES IN POSTS */
+/* line 292, sass/single.scss */
+.supaswag { background: green; color: white; }
+
 /********** SIDEBAR ********/
 /* line 2, sass/sidebar.scss */
 #right-sidebar { border-left: 1px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
