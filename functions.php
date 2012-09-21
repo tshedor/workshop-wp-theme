@@ -1,9 +1,6 @@
 <?php
 
-    wp_enqueue_scripts('jquery-ui-datepicker');
-    //wp_enqueue_script('jquery-ui-slider');
     wp_enqueue_scripts('custom-js', get_template_directory_uri().'/js/admin-functions.js');
-    //wp_enqueue_style('jquery-ui-custom', get_template_directory_uri().'/functions/tuts/css/jquery-ui-custom.css');
 add_editor_style();
 
 function register_custom_menu() {
@@ -27,42 +24,6 @@ array(  "name" => "Lead Story",
         "std" => "",
         "type" => "posts"),
 
-array(  "name" => "Sidekick Story 1",
-        "desc" => "Pick a story from the list to feature on the left above all else.",
-        "id" => $shortname."sidekick_story_1",
-        "std" => "",
-        "type" => "posts"),
-
-array(  "name" => "Sidekick Story 2",
-        "desc" => "Pick a story from the list to feature on the left below the first one.",
-        "id" => $shortname."sidekick_story_2",
-        "std" => "",
-        "type" => "posts"),
-
-array(  "name" => "Sidekick Story 3",
-        "desc" => "Pick a story from the list to feature on the left below the second one.",
-        "id" => $shortname."sidekick_story_3",
-        "std" => "",
-        "type" => "posts"),
-
-array(  "name" => "Photos Category",
-        "desc" => "A category that is visually-dominant",
-        "id" => $shortname."hero_category_1",
-        "std" => "",
-        "type" => "categories"),
-
-array(  "name" => "Multimedia Category",
-        "desc" => "A category that is features multimedia content",
-        "id" => $shortname."hero_category_2",
-        "std" => "",
-        "type" => "categories"),
-
-array(  "name" => "Editor's Picks Category",
-        "desc" => "A category that is features the best of the best",
-        "id" => $shortname."hero_category_3",
-        "std" => "",
-        "type" => "categories"),
-
 array( "name" => "Sitewide",
         "type" => "break",
         "id" => $shortname."break1",
@@ -74,48 +35,6 @@ array(  "name" => "Breaking news",
         "id" => $shortname."breaking_news_story",
         "std" => "",
         "type" => "posts"),
-
-array(  "name" => "Featured Category",
-        "desc" => "The category sitewide that is featured",
-        "id" => $shortname."featured_cat",
-        "std" => "",
-        "type" => "categories"),
-
-array(  "name" => "Opinion Category",
-        "desc" => "The category sitewide that is opinion",
-        "id" => $shortname."opinion_cat",
-        "std" => "",
-        "type" => "categories"),
-
-array(  "name" => "News Category",
-        "desc" => "The category sitewide that is news",
-        "id" => $shortname."news_cat",
-        "std" => "",
-        "type" => "categories"),
-
-array(  "name" => "Sports Category",
-        "desc" => "The category sitewide that is sports",
-        "id" => $shortname."sports_cat",
-        "std" => "",
-        "type" => "categories"),
-
-array(  "name" => "Entertainment Category",
-        "desc" => "The category sitewide that is entertainment",
-        "id" => $shortname."entertainment_cat",
-        "std" => "",
-        "type" => "categories"),
-
-array(  "name" => "PDF Category",
-        "desc" => "The category sitewide that is PDF",
-        "id" => $shortname."pdf_cat",
-        "std" => "",
-        "type" => "categories"),
-
-array(  "name" => "FFA Category",
-        "desc" => "The category sitewide that is Free For All",
-        "id" => $shortname."freeforall_cat",
-        "std" => "",
-        "type" => "categories"),
 
 );
 
@@ -261,4 +180,18 @@ function themeoptions_admin_menu()  {
 }
 add_action('admin_menu', 'themeoptions_admin_menu');
 
+function example_shortcode( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'just_code' => 'false',
+    ), $atts ) );
+    $code = str_replace('<', '&lt;', $content);
+    $code = '<pre><code>'.$code.'</code></pre>';
+    $code_and_example = '<div class="span6 code-block">'.$content.'</div><div class="span6">'.$code.'</div>';
+    if($just_code == 'true'){
+        $code_and_example = '<div class="span12">'.$code.'</div>';
+    }
+    return '
+    <div class="row-fluid clearfix">'.$code_and_example.'</div>';
+}
+add_shortcode( 'example', 'example_shortcode' );
 ?>
