@@ -41,11 +41,11 @@
 						@include std-hover($blue);
 						@include fs; 
 					}
-					&.current-menu-item a, .current-post-ancestor a, .current-menu-parent a, .current-post-parent a {
+					&.current-menu-item a, &.current-post-ancestor a, &.current-menu-parent a, &.current-post-parent a {
 						color:$orange;
 					}
 				}
-				&.current-menu-item a, .current-post-ancestor a, .current-menu-parent a, .current-post-parent a {
+				&.current-menu-item a, &.current-post-ancestor a, &.current-menu-parent a, &.current-post-parent a {
 					color:$orange;
 				}
 			}
@@ -81,7 +81,7 @@
 							margin:inherit;
 						}
 					}
-					&.current-menu-item, .current-post-ancestor, .current-menu-parent, .current-post-parent {
+					&.current-menu-item, &.current-post-ancestor, &.current-menu-parent, &.current-post-parent {
 						a {
 							color:inherit;
 							border-left:8px solid $blue;

@@ -21,9 +21,9 @@
 /* line 18, sass/variables.scss */
 .left-nav .primary-left ul li:first-child a:hover { color: #358ccb; }
 /* line 44, sass/navigation.scss */
-.left-nav .primary-left ul li:first-child.current-menu-item a, .left-nav .primary-left ul li:first-child .current-post-ancestor a, .left-nav .primary-left ul li:first-child .current-menu-parent a, .left-nav .primary-left ul li:first-child .current-post-parent a { color: #e29532; }
+.left-nav .primary-left ul li:first-child.current-menu-item a, .left-nav .primary-left ul li:first-child.current-post-ancestor a, .left-nav .primary-left ul li:first-child.current-menu-parent a, .left-nav .primary-left ul li:first-child.current-post-parent a { color: #e29532; }
 /* line 48, sass/navigation.scss */
-.left-nav .primary-left ul li.current-menu-item a, .left-nav .primary-left ul li .current-post-ancestor a, .left-nav .primary-left ul li .current-menu-parent a, .left-nav .primary-left ul li .current-post-parent a { color: #e29532; }
+.left-nav .primary-left ul li.current-menu-item a, .left-nav .primary-left ul li.current-post-ancestor a, .left-nav .primary-left ul li.current-menu-parent a, .left-nav .primary-left ul li.current-post-parent a { color: #e29532; }
 /* line 52, sass/navigation.scss */
 .left-nav .primary-left ul ul.sub-menu { margin: 12px 0px; padding: 0px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 /* line 56, sass/navigation.scss */
@@ -37,9 +37,9 @@
 /* line 78, sass/navigation.scss */
 .left-nav .primary-left ul ul.sub-menu li:first-child a { padding: 10px; border-bottom: 0px; margin: inherit; }
 /* line 85, sass/navigation.scss */
-.left-nav .primary-left ul ul.sub-menu li.current-menu-item a, .left-nav .primary-left ul ul.sub-menu li .current-post-ancestor a, .left-nav .primary-left ul ul.sub-menu li .current-menu-parent a, .left-nav .primary-left ul ul.sub-menu li .current-post-parent a { color: inherit; border-left: 8px solid #358ccb; }
+.left-nav .primary-left ul ul.sub-menu li.current-menu-item a, .left-nav .primary-left ul ul.sub-menu li.current-post-ancestor a, .left-nav .primary-left ul ul.sub-menu li.current-menu-parent a, .left-nav .primary-left ul ul.sub-menu li.current-post-parent a { color: inherit; border-left: 8px solid #358ccb; }
 /* line 89, sass/navigation.scss */
-.left-nav .primary-left ul ul.sub-menu li.current-menu-item ul li a, .left-nav .primary-left ul ul.sub-menu li .current-post-ancestor ul li a, .left-nav .primary-left ul ul.sub-menu li .current-menu-parent ul li a, .left-nav .primary-left ul ul.sub-menu li .current-post-parent ul li a { background: #494949; }
+.left-nav .primary-left ul ul.sub-menu li.current-menu-item ul li a, .left-nav .primary-left ul ul.sub-menu li.current-post-ancestor ul li a, .left-nav .primary-left ul ul.sub-menu li.current-menu-parent ul li a, .left-nav .primary-left ul ul.sub-menu li.current-post-parent ul li a { background: #494949; }
 /* line 93, sass/navigation.scss */
 .left-nav .primary-left ul ul.sub-menu li .sub-menu { padding: 0px; margin-bottom: 5px; }
 /* line 96, sass/navigation.scss */

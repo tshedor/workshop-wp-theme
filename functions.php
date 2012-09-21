@@ -183,9 +183,10 @@ add_action('admin_menu', 'themeoptions_admin_menu');
 function example_shortcode( $atts, $content = null ) {
     extract( shortcode_atts( array(
         'just_code' => 'false',
+        'lang' => 'markup',
     ), $atts ) );
     $code = str_replace('<', '&lt;', $content);
-    $code = '<pre><code>'.$code.'</code></pre>';
+    $code = '<pre><code class="language-'.$lang.'">'.$code.'</code></pre>';
     $code_and_example = '<div class="span6 code-block">'.$content.'</div><div class="span6">'.$code.'</div>';
     if($just_code == 'true'){
         $code_and_example = '<div class="span12">'.$code.'</div>';
