@@ -185,7 +185,7 @@ function example_shortcode( $atts, $content = null ) {
         'just_code' => 'false',
         'lang' => 'markup',
     ), $atts ) );
-    $code = strip_tags($content, '<a><img><div><body><html><script><style><h1><h2><h3><h4><h5><h6><hr><video><audio><ul><ol><li><table><tbody><tr><td><th><link><strong><em><code><pre><span><embed><b><i><dd><dt><dl><blockquote><header><footer><article><aside><form><input><textarea><button><section><address><cite><embed><object>')
+    $code = strip_tags($content, '<a><img><div><body><html><script><style><h1><h2><h3><h4><h5><h6><hr><video><audio><ul><ol><li><table><tbody><tr><td><th><link><strong><em><code><pre><span><embed><b><i><dd><dt><dl><blockquote><header><footer><article><aside><form><input><textarea><button><section><address><cite><embed><object>');
     $code = str_replace('<', '&lt;', $content);
     $code = '<pre><code class="language-'.$lang.'">'.$code.'</code></pre>';
     $code_and_example = '<div class="span6 code-block">'.$content.'</div><div class="span6">'.$code.'</div>';
