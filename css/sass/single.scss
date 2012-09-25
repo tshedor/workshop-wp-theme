@@ -93,6 +93,21 @@
 		.code-block, .code-ignore {
 			@include nested-reset;
 			@include body;
+			h1, h2, h3, h4, h5, h6 {
+				color:#333333;
+			}
+			h1 {
+				@include fs-xxlg;
+			}
+			h2 {
+				@include fs-xlg;
+			}
+			h3 {
+				@include fs-lg;
+			}
+			h4 {
+				@include fs;
+			}
 			p {
 				&:first-child {
 					&:first-letter {

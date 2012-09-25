@@ -384,103 +384,113 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 .post .entry .code-block q:before, .post .entry .code-block q:after, .post .entry .code-block blockquote:before, .post .entry .code-block blockquote:after, .post .entry .code-ignore q:before, .post .entry .code-ignore q:after, .post .entry .code-ignore blockquote:before, .post .entry .code-ignore blockquote:after { content: ""; content: none; }
 /* line 61, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 .post .entry .code-block a img, .post .entry .code-ignore a img { border: none; }
-/* line 98, sass/single.scss */
+/* line 96, sass/single.scss */
+.post .entry .code-block h1, .post .entry .code-block h2, .post .entry .code-block h3, .post .entry .code-block h4, .post .entry .code-block h5, .post .entry .code-block h6, .post .entry .code-ignore h1, .post .entry .code-ignore h2, .post .entry .code-ignore h3, .post .entry .code-ignore h4, .post .entry .code-ignore h5, .post .entry .code-ignore h6 { color: #333333; }
+/* line 99, sass/single.scss */
+.post .entry .code-block h1, .post .entry .code-ignore h1 { font-size: 38.4px; }
+/* line 102, sass/single.scss */
+.post .entry .code-block h2, .post .entry .code-ignore h2 { font-size: 25.6px; line-height: 26px; }
+/* line 105, sass/single.scss */
+.post .entry .code-block h3, .post .entry .code-ignore h3 { font-size: 19.2px; }
+/* line 108, sass/single.scss */
+.post .entry .code-block h4, .post .entry .code-ignore h4 { font-size: 16px; }
+/* line 113, sass/single.scss */
 .post .entry .code-block p:first-child:first-letter, .post .entry .code-ignore p:first-child:first-letter { font-size: 16px; margin: 0px; float: inherit; padding: 0px; text-transform: inherit; color: inherit; }
-/* line 110, sass/single.scss */
+/* line 125, sass/single.scss */
 .post .entry blockquote p:first-child:first-letter { text-transform: none; padding-right: 0px; font-size: inherit; float: inherit; margin-top: inherit; margin-right: inherit; }
-/* line 120, sass/single.scss */
+/* line 135, sass/single.scss */
 .post ul { margin-left: 45px; }
-/* line 123, sass/single.scss */
+/* line 138, sass/single.scss */
 .post .tag-heading { text-transform: uppercase; color: #ececec; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; font-weight: bold; float: left; padding-right: 5px; }
 
-/* line 133, sass/single.scss */
+/* line 148, sass/single.scss */
 .post_excerpt h3 { color: inherit; }
-/* line 135, sass/single.scss */
+/* line 150, sass/single.scss */
 .post_excerpt h3 a { color: #358ccb; }
 
-/* line 140, sass/single.scss */
+/* line 155, sass/single.scss */
 .entry-meta { font-size: 14.4px; color: #b9b9b9; margin: 15px 0px; }
 
 /********* COMMENTS ************/
-/* line 149, sass/single.scss */
-#comment-area { padding: 20px; }
-/* line 151, sass/single.scss */
-#comment-area .comment-head { text-align: right; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; text-transform: uppercase; color: #ececec; font-size: 19.2px; margin-bottom: -18px; }
-/* line 159, sass/single.scss */
-#comment-area .logged-in { text-transform: uppercase; color: #ececec; margin-top: 30px; font-size: 12.8px; }
 /* line 164, sass/single.scss */
+#comment-area { padding: 20px; }
+/* line 166, sass/single.scss */
+#comment-area .comment-head { text-align: right; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; text-transform: uppercase; color: #ececec; font-size: 19.2px; margin-bottom: -18px; }
+/* line 174, sass/single.scss */
+#comment-area .logged-in { text-transform: uppercase; color: #ececec; margin-top: 30px; font-size: 12.8px; }
+/* line 179, sass/single.scss */
 #comment-area .logged-in a { color: #afd1ea; }
-/* line 168, sass/single.scss */
+/* line 183, sass/single.scss */
 #comment-area ul.commentlist { margin-left: 0px; list-style: none; }
-/* line 170, sass/single.scss */
+/* line 185, sass/single.scss */
 #comment-area ul.commentlist li { padding: 15px 0px; margin: 10px 0px; }
 
-/* line 176, sass/single.scss */
+/* line 191, sass/single.scss */
 .comment-meta { background: #eee; padding: 8px; text-transform: uppercase; color: #358ccb; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; vertical-align: top; }
-/* line 177, sass/single.scss */
+/* line 192, sass/single.scss */
 .comment-meta img { float: left; margin-right: 8px; }
-/* line 187, sass/single.scss */
+/* line 202, sass/single.scss */
 .comment-meta .comment-date { color: #ececec; font-size: 12.8px; margin-top: -6px; line-height: 19px; }
-/* line 193, sass/single.scss */
+/* line 208, sass/single.scss */
 .comment-meta .comment-author { top: -2px; position: relative; }
 
-/* line 198, sass/single.scss */
+/* line 213, sass/single.scss */
 .comment-text { padding-left: 55px; margin-top: 15px; font-size: 14.4px; }
 
-/* line 203, sass/single.scss */
+/* line 218, sass/single.scss */
 .related-bar { padding: 20px; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; }
-/* line 205, sass/single.scss */
+/* line 220, sass/single.scss */
 .related-bar img { width: 100%; max-height: 90px; border: 4px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 214, sass/single.scss */
+/* line 229, sass/single.scss */
 .gallery-item .wp-caption-text { display: none; }
 
-/* line 218, sass/single.scss */
+/* line 233, sass/single.scss */
 #tm_month, #tm_day { display: none; }
 
-/* line 221, sass/single.scss */
+/* line 236, sass/single.scss */
 .page404 h1 { font-size: 172px!important; text-align: center!important; height: 160px; margin-top: 57px; }
 
 /******* FEATURES PAGE *********/
-/* line 229, sass/single.scss */
+/* line 244, sass/single.scss */
 .centered { text-align: center; }
-/* line 231, sass/single.scss */
+/* line 246, sass/single.scss */
 .centered img { margin: 0 auto; }
 
-/* line 235, sass/single.scss */
+/* line 250, sass/single.scss */
 .feature-page { font-size: 14.4px; }
-/* line 237, sass/single.scss */
+/* line 252, sass/single.scss */
 .feature-page img { border: 1px solid white; -webkit-box-shadow: 1px 1px 6px 0px #868686; -moz-box-shadow: 1px 1px 6px 0px #868686; box-shadow: 1px 1px 6px 0px #868686; }
-/* line 240, sass/single.scss */
+/* line 255, sass/single.scss */
 .feature-page img.no-shadow { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-/* line 244, sass/single.scss */
-.feature-page .row-fluid { margin: 45px 0px; }
-/* line 247, sass/single.scss */
-.feature-page .feature-page-lead { margin: 60px 0px; }
-/* line 249, sass/single.scss */
-.feature-page .feature-page-lead h1 { text-align: center; color: #b9b9b9; text-transform: none; font-size: 38.4px; }
-/* line 254, sass/single.scss */
-.feature-page .feature-page-lead h1 span { color: #358ccb; }
 /* line 259, sass/single.scss */
+.feature-page .row-fluid { margin: 45px 0px; }
+/* line 262, sass/single.scss */
+.feature-page .feature-page-lead { margin: 60px 0px; }
+/* line 264, sass/single.scss */
+.feature-page .feature-page-lead h1 { text-align: center; color: #b9b9b9; text-transform: none; font-size: 38.4px; }
+/* line 269, sass/single.scss */
+.feature-page .feature-page-lead h1 span { color: #358ccb; }
+/* line 274, sass/single.scss */
 .feature-page h2 { text-transform: none; }
-/* line 261, sass/single.scss */
+/* line 276, sass/single.scss */
 .feature-page h2 span { color: #358ccb; }
-/* line 265, sass/single.scss */
+/* line 280, sass/single.scss */
 .feature-page h3 { text-transform: uppercase; font-size: 19.2px; font-weight: bold; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; }
-/* line 271, sass/single.scss */
+/* line 286, sass/single.scss */
 .feature-page .still-here { color: #ececec; }
-/* line 275, sass/single.scss */
+/* line 290, sass/single.scss */
 .feature-page .lingering div { text-align: justify; }
-/* line 278, sass/single.scss */
+/* line 293, sass/single.scss */
 .feature-page .lingering h2 { font-size: 19.2px; }
-/* line 283, sass/single.scss */
+/* line 298, sass/single.scss */
 .feature-page .coda p { margin: 30px 0px; line-height: 24px; }
 
-/* line 289, sass/single.scss */
+/* line 304, sass/single.scss */
 :not(pre) > code[class*="language-"] { color: #905; }
 
 /* EXAMPLES IN POSTS */
-/* line 294, sass/single.scss */
+/* line 309, sass/single.scss */
 .supaswag { background: green; color: white; }
 
 /********** SIDEBAR ********/
