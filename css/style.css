@@ -370,103 +370,117 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 .post .entry p:first-child:first-letter { text-transform: uppercase; padding-right: 2px; font-size: 38.4px; float: left; margin-top: 9px; margin-right: 5px; color: #b9b9b9; }
 /* line 89, sass/single.scss */
 .post .entry p.final-byline { font-style: italic; }
-/* line 96, sass/single.scss */
+/* line 93, sass/single.scss */
+.post .entry .code-block, .post .entry .code-ignore { font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 400; }
+/* line 52, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+.post .entry .code-block div, .post .entry .code-block span, .post .entry .code-block applet, .post .entry .code-block object, .post .entry .code-block iframe, .post .entry .code-block h1, .post .entry .code-block h2, .post .entry .code-block h3, .post .entry .code-block h4, .post .entry .code-block h5, .post .entry .code-block h6, .post .entry .code-block p, .post .entry .code-block blockquote, .post .entry .code-block pre, .post .entry .code-block a, .post .entry .code-block abbr, .post .entry .code-block acronym, .post .entry .code-block address, .post .entry .code-block big, .post .entry .code-block cite, .post .entry .code-block code, .post .entry .code-block del, .post .entry .code-block dfn, .post .entry .code-block em, .post .entry .code-block img, .post .entry .code-block ins, .post .entry .code-block kbd, .post .entry .code-block q, .post .entry .code-block s, .post .entry .code-block samp, .post .entry .code-block small, .post .entry .code-block strike, .post .entry .code-block strong, .post .entry .code-block sub, .post .entry .code-block sup, .post .entry .code-block tt, .post .entry .code-block var, .post .entry .code-block b, .post .entry .code-block u, .post .entry .code-block i, .post .entry .code-block center, .post .entry .code-block dl, .post .entry .code-block dt, .post .entry .code-block dd, .post .entry .code-block ol, .post .entry .code-block ul, .post .entry .code-block li, .post .entry .code-block fieldset, .post .entry .code-block form, .post .entry .code-block label, .post .entry .code-block legend, .post .entry .code-block table, .post .entry .code-block caption, .post .entry .code-block tbody, .post .entry .code-block tfoot, .post .entry .code-block thead, .post .entry .code-block tr, .post .entry .code-block th, .post .entry .code-block td, .post .entry .code-block article, .post .entry .code-block aside, .post .entry .code-block canvas, .post .entry .code-block details, .post .entry .code-block embed, .post .entry .code-block figure, .post .entry .code-block figcaption, .post .entry .code-block footer, .post .entry .code-block header, .post .entry .code-block hgroup, .post .entry .code-block menu, .post .entry .code-block nav, .post .entry .code-block output, .post .entry .code-block ruby, .post .entry .code-block section, .post .entry .code-block summary, .post .entry .code-block time, .post .entry .code-block mark, .post .entry .code-block audio, .post .entry .code-block video, .post .entry .code-ignore div, .post .entry .code-ignore span, .post .entry .code-ignore applet, .post .entry .code-ignore object, .post .entry .code-ignore iframe, .post .entry .code-ignore h1, .post .entry .code-ignore h2, .post .entry .code-ignore h3, .post .entry .code-ignore h4, .post .entry .code-ignore h5, .post .entry .code-ignore h6, .post .entry .code-ignore p, .post .entry .code-ignore blockquote, .post .entry .code-ignore pre, .post .entry .code-ignore a, .post .entry .code-ignore abbr, .post .entry .code-ignore acronym, .post .entry .code-ignore address, .post .entry .code-ignore big, .post .entry .code-ignore cite, .post .entry .code-ignore code, .post .entry .code-ignore del, .post .entry .code-ignore dfn, .post .entry .code-ignore em, .post .entry .code-ignore img, .post .entry .code-ignore ins, .post .entry .code-ignore kbd, .post .entry .code-ignore q, .post .entry .code-ignore s, .post .entry .code-ignore samp, .post .entry .code-ignore small, .post .entry .code-ignore strike, .post .entry .code-ignore strong, .post .entry .code-ignore sub, .post .entry .code-ignore sup, .post .entry .code-ignore tt, .post .entry .code-ignore var, .post .entry .code-ignore b, .post .entry .code-ignore u, .post .entry .code-ignore i, .post .entry .code-ignore center, .post .entry .code-ignore dl, .post .entry .code-ignore dt, .post .entry .code-ignore dd, .post .entry .code-ignore ol, .post .entry .code-ignore ul, .post .entry .code-ignore li, .post .entry .code-ignore fieldset, .post .entry .code-ignore form, .post .entry .code-ignore label, .post .entry .code-ignore legend, .post .entry .code-ignore table, .post .entry .code-ignore caption, .post .entry .code-ignore tbody, .post .entry .code-ignore tfoot, .post .entry .code-ignore thead, .post .entry .code-ignore tr, .post .entry .code-ignore th, .post .entry .code-ignore td, .post .entry .code-ignore article, .post .entry .code-ignore aside, .post .entry .code-ignore canvas, .post .entry .code-ignore details, .post .entry .code-ignore embed, .post .entry .code-ignore figure, .post .entry .code-ignore figcaption, .post .entry .code-ignore footer, .post .entry .code-ignore header, .post .entry .code-ignore hgroup, .post .entry .code-ignore menu, .post .entry .code-ignore nav, .post .entry .code-ignore output, .post .entry .code-ignore ruby, .post .entry .code-ignore section, .post .entry .code-ignore summary, .post .entry .code-ignore time, .post .entry .code-ignore mark, .post .entry .code-ignore audio, .post .entry .code-ignore video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+/* line 55, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+.post .entry .code-block table, .post .entry .code-ignore table { border-collapse: collapse; border-spacing: 0; }
+/* line 57, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+.post .entry .code-block caption, .post .entry .code-block th, .post .entry .code-block td, .post .entry .code-ignore caption, .post .entry .code-ignore th, .post .entry .code-ignore td { text-align: left; font-weight: normal; vertical-align: middle; }
+/* line 59, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+.post .entry .code-block q, .post .entry .code-block blockquote, .post .entry .code-ignore q, .post .entry .code-ignore blockquote { quotes: none; }
+/* line 103, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+.post .entry .code-block q:before, .post .entry .code-block q:after, .post .entry .code-block blockquote:before, .post .entry .code-block blockquote:after, .post .entry .code-ignore q:before, .post .entry .code-ignore q:after, .post .entry .code-ignore blockquote:before, .post .entry .code-ignore blockquote:after { content: ""; content: none; }
+/* line 61, ../../../../../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+.post .entry .code-block a img, .post .entry .code-ignore a img { border: none; }
+/* line 98, sass/single.scss */
 .post .entry .code-block p:first-child:first-letter, .post .entry .code-ignore p:first-child:first-letter { font-size: 16px; margin: 0px; float: inherit; padding: 0px; text-transform: inherit; color: inherit; }
-/* line 108, sass/single.scss */
+/* line 110, sass/single.scss */
 .post .entry blockquote p:first-child:first-letter { text-transform: none; padding-right: 0px; font-size: inherit; float: inherit; margin-top: inherit; margin-right: inherit; }
-/* line 118, sass/single.scss */
+/* line 120, sass/single.scss */
 .post ul { margin-left: 45px; }
-/* line 121, sass/single.scss */
+/* line 123, sass/single.scss */
 .post .tag-heading { text-transform: uppercase; color: #ececec; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; font-weight: bold; float: left; padding-right: 5px; }
 
-/* line 131, sass/single.scss */
-.post_excerpt h3 { color: inherit; }
 /* line 133, sass/single.scss */
+.post_excerpt h3 { color: inherit; }
+/* line 135, sass/single.scss */
 .post_excerpt h3 a { color: #358ccb; }
 
-/* line 138, sass/single.scss */
+/* line 140, sass/single.scss */
 .entry-meta { font-size: 14.4px; color: #b9b9b9; margin: 15px 0px; }
 
 /********* COMMENTS ************/
-/* line 147, sass/single.scss */
-#comment-area { padding: 20px; }
 /* line 149, sass/single.scss */
+#comment-area { padding: 20px; }
+/* line 151, sass/single.scss */
 #comment-area .comment-head { text-align: right; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; text-transform: uppercase; color: #ececec; font-size: 19.2px; margin-bottom: -18px; }
-/* line 157, sass/single.scss */
+/* line 159, sass/single.scss */
 #comment-area .logged-in { text-transform: uppercase; color: #ececec; margin-top: 30px; font-size: 12.8px; }
-/* line 162, sass/single.scss */
+/* line 164, sass/single.scss */
 #comment-area .logged-in a { color: #afd1ea; }
-/* line 166, sass/single.scss */
-#comment-area ul.commentlist { margin-left: 0px; list-style: none; }
 /* line 168, sass/single.scss */
+#comment-area ul.commentlist { margin-left: 0px; list-style: none; }
+/* line 170, sass/single.scss */
 #comment-area ul.commentlist li { padding: 15px 0px; margin: 10px 0px; }
 
-/* line 174, sass/single.scss */
+/* line 176, sass/single.scss */
 .comment-meta { background: #eee; padding: 8px; text-transform: uppercase; color: #358ccb; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; vertical-align: top; }
-/* line 175, sass/single.scss */
+/* line 177, sass/single.scss */
 .comment-meta img { float: left; margin-right: 8px; }
-/* line 185, sass/single.scss */
+/* line 187, sass/single.scss */
 .comment-meta .comment-date { color: #ececec; font-size: 12.8px; margin-top: -6px; line-height: 19px; }
-/* line 191, sass/single.scss */
+/* line 193, sass/single.scss */
 .comment-meta .comment-author { top: -2px; position: relative; }
 
-/* line 196, sass/single.scss */
+/* line 198, sass/single.scss */
 .comment-text { padding-left: 55px; margin-top: 15px; font-size: 14.4px; }
 
-/* line 201, sass/single.scss */
-.related-bar { padding: 20px; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; }
 /* line 203, sass/single.scss */
+.related-bar { padding: 20px; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; }
+/* line 205, sass/single.scss */
 .related-bar img { width: 100%; max-height: 90px; border: 4px solid white; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
-/* line 212, sass/single.scss */
+/* line 214, sass/single.scss */
 .gallery-item .wp-caption-text { display: none; }
 
-/* line 216, sass/single.scss */
+/* line 218, sass/single.scss */
 #tm_month, #tm_day { display: none; }
 
-/* line 219, sass/single.scss */
+/* line 221, sass/single.scss */
 .page404 h1 { font-size: 172px!important; text-align: center!important; height: 160px; margin-top: 57px; }
 
 /******* FEATURES PAGE *********/
-/* line 227, sass/single.scss */
-.centered { text-align: center; }
 /* line 229, sass/single.scss */
+.centered { text-align: center; }
+/* line 231, sass/single.scss */
 .centered img { margin: 0 auto; }
 
-/* line 233, sass/single.scss */
-.feature-page { font-size: 14.4px; }
 /* line 235, sass/single.scss */
+.feature-page { font-size: 14.4px; }
+/* line 237, sass/single.scss */
 .feature-page img { border: 1px solid white; -webkit-box-shadow: 1px 1px 6px 0px #868686; -moz-box-shadow: 1px 1px 6px 0px #868686; box-shadow: 1px 1px 6px 0px #868686; }
-/* line 238, sass/single.scss */
+/* line 240, sass/single.scss */
 .feature-page img.no-shadow { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-/* line 242, sass/single.scss */
+/* line 244, sass/single.scss */
 .feature-page .row-fluid { margin: 45px 0px; }
-/* line 245, sass/single.scss */
-.feature-page .feature-page-lead { margin: 60px 0px; }
 /* line 247, sass/single.scss */
+.feature-page .feature-page-lead { margin: 60px 0px; }
+/* line 249, sass/single.scss */
 .feature-page .feature-page-lead h1 { text-align: center; color: #b9b9b9; text-transform: none; font-size: 38.4px; }
-/* line 252, sass/single.scss */
+/* line 254, sass/single.scss */
 .feature-page .feature-page-lead h1 span { color: #358ccb; }
-/* line 257, sass/single.scss */
-.feature-page h2 { text-transform: none; }
 /* line 259, sass/single.scss */
+.feature-page h2 { text-transform: none; }
+/* line 261, sass/single.scss */
 .feature-page h2 span { color: #358ccb; }
-/* line 263, sass/single.scss */
+/* line 265, sass/single.scss */
 .feature-page h3 { text-transform: uppercase; font-size: 19.2px; font-weight: bold; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; }
-/* line 269, sass/single.scss */
+/* line 271, sass/single.scss */
 .feature-page .still-here { color: #ececec; }
-/* line 273, sass/single.scss */
+/* line 275, sass/single.scss */
 .feature-page .lingering div { text-align: justify; }
-/* line 276, sass/single.scss */
+/* line 278, sass/single.scss */
 .feature-page .lingering h2 { font-size: 19.2px; }
-/* line 281, sass/single.scss */
+/* line 283, sass/single.scss */
 .feature-page .coda p { margin: 30px 0px; line-height: 24px; }
 
-/* line 287, sass/single.scss */
+/* line 289, sass/single.scss */
 :not(pre) > code[class*="language-"] { color: #905; }
 
 /* EXAMPLES IN POSTS */
-/* line 292, sass/single.scss */
+/* line 294, sass/single.scss */
 .supaswag { background: green; color: white; }
 
 /********** SIDEBAR ********/

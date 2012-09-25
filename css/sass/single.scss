@@ -91,6 +91,8 @@
 			}
 		}
 		.code-block, .code-ignore {
+			@include nested-reset;
+			@include body;
 			p {
 				&:first-child {
 					&:first-letter {
