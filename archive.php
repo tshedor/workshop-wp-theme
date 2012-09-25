@@ -21,6 +21,7 @@
 		<?php } ?>
 			
 		<?php $count = 0;
+		query_posts('order=ASC');
 		while (have_posts()) : the_post();
 		get_template_part( 'loop', 'single' );
 	endwhile; endif;

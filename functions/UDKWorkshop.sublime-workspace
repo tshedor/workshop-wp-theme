@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"str_rep",
+				"str_replace"
+			],
+			[
 				"get_pos",
 				"get_post"
 			],
@@ -312,12 +316,12 @@
 	},
 	"file_history":
 	[
-		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/single.scss",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/navigation.scss",
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/single.scss",
+		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/functions.php",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/header.php",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/single.php",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/loop-single.php",
-		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/functions.php",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/footer.php",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/css/sass/global.scss",
 		"/Users/tshedor/Documents/Local Server/dev/wp-content/themes/UDKWorkshop/archive.php",
@@ -461,6 +465,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<p>",
 			"width: 80px",
 			"span6",
 			"row-fluid clearfix",
@@ -587,8 +592,7 @@
 			"44",
 			"2.5",
 			"#",
-			"../",
-			"#"
+			"../"
 		],
 		"highlight": false,
 		"in_selection": false,
