@@ -1,4 +1,4 @@
-	/******** NAVIGATION ************/
+/******** NAVIGATION ************/
 
 #the_very_top {
 	margin-top:$std-margin;
@@ -142,61 +142,3 @@
 			}
 		}
 	}
-
-/****** DYNAMIC CATEGORY LOADING ******/
-
-.load-cat {
-	padding:$std-padding;
-	height:380px;
-	margin-bottom: 20px;
-	background-color: rgba(243,243,243,0.8);
-	border: 1px solid #eee;
-	border: 1px solid rgba(0, 0, 0, 0.05);
-	display:none; /* JS/CUSTOM.JS YO! */
-	margin-top:$std-margin;
-	@include box-shadow(inset 2px 3px 8px rgba(0, 0, 0, 0.05));
-	h1 {
-		@include cond;
-		@include std-hover($gray);
-	}
-	.span4 {
-		@include box-sizing(border-box);
-		border-left:1px solid $lightest_gray;
-		&:first-child {
-			border:0px;
-		}
-	}
-	.dynamic-item {
-		margin:$std-margin 0px;
-		img {
-			float:left;
-			width:50px;
-			height:50px;
-			margin-right:$std-margin;
-			@include box-shadow(1px 1px 5px 0px $gray);
-			@include box-sizing(border-box);
-			@include std-hover;
-			&:hover{
-				@include box-shadow(1px 1px 5px 0px $light_gray);
-			}
-		}
-		h3 {
-			@include alt-hover;
-			@include fs-medium;
-			line-height:18px;
-		}
-		.excerpt {
-			@include fs-small;
-		}
-	}
-	.child-cats {
-		@include no-list;
-		text-align:right;
-		text-transform:uppercase;
-		@include cond;
-		@include fs;
-		li {
-			margin:$std-margin/2 0px;
-		}
-	}
-}
