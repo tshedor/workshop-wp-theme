@@ -249,9 +249,10 @@
 }
 
 .reeses-example {
-	@include global-reset;
 	.reeses-bg {
-	background: #FF4000
+	background: #FF4000;
+	width:100%;
+	height:250px;
 	}
 h4 {
 	color:#5D0A0B;
@@ -270,6 +271,7 @@ h1 {
 	text-align:center;
 	color:#E9F402;
 	font-family:'wild_rideregular', Helvetica, script;
+	top:80px;
 	/* -webkit-text-fill-color:#E9F402;
 	-webkit-text-stroke:4px #5D0A0B;
 	text-shadow:4px -2px #5D0A0B, -5px 3px #5D0A0B, -1px 4px #5D0A0B, -1px -4px #5D0A0B, 4px 1px #5D0A0B; */
@@ -283,7 +285,7 @@ h1:after {
 	content:'Reese\'s';
 	color:#5D0A0B;
 	position:absolute;
-	right:126px;
+	right:251px;
 	top:2px;
 	z-index: -1;
 	letter-spacing: -1px;
