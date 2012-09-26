@@ -253,7 +253,7 @@
 	background: #FF4000;
 	width:100%;
 	height:250px;
-		text-shadow:none!important;
+	text-shadow:none!important;
 
 	}
 h4 {
@@ -267,6 +267,7 @@ h4 {
 	position:relative;
 	top:62px;
 	left:42px;
+	text-shadow:none;
 }
 h1 {
 	font-size:185px;
@@ -282,6 +283,7 @@ h1 {
 	font-weight:lighter;
 	position:relative;
 	z-index:0;
+	text-shadow:none;
 }
 h1:after {
 	content:'Reese\'s';
