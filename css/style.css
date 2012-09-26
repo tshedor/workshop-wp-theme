@@ -43,7 +43,7 @@
 /********* GENERAL ***********/
 h1, h2, h3, h4, h5, h6, h7, h8 { font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; color: #358ccb; font-weight: normal; text-shadow: #fafafa 0px 1px 0px; }
 
-h2 { color: #2a70a3; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; font-weight: 300; font-size: 25.6px; line-height: 26px; margin: 20px 0px; }
+h2 { color: #812020; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; font-weight: 300; font-size: 25.6px; line-height: 26px; margin: 20px 0px; }
 
 h3 { color: #e29532; }
 
@@ -184,7 +184,7 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 .post-content { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-left: 1px solid white; }
 
 .post { padding: 20px; padding-top: 0px; }
-.post h1 { margin: 46px 0px; font-weight: 300; color: #dd4335; }
+.post h1 { margin: 46px 0px; font-weight: 300; color: #358ccb; }
 .post #meta { margin-left: 0px; list-style: none; font-size: 12.8px; color: #ececec; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; margin-bottom: 15px; }
 .post #meta li { display: -moz-inline-stack; display: inline-block; vertical-align: middle; *vertical-align: auto; zoom: 1; *display: inline; }
 .post #meta li:after { content: '\7C'; padding: 0px 2px; }
