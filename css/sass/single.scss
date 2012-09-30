@@ -80,36 +80,15 @@
 				font-style:italic;
 			}
 		}
-		.code-block, .code-ignore {
-			@include nested-reset;
-			@include body;
-			h1, h2, h3, h4, h5, h6 {
-				color:#333333;
-			}
-			h1 {
-				@include fs-xxlg;
-			}
-			h2 {
-				@include fs-xlg;
-				text-transform:none;
-			}
-			h3 {
-				@include fs-lg;
-			}
-			h4 {
-				@include fs;
+		.wp-caption {
+			@include box-shadow(2px 2px 12px -4px #777 inset);
+			padding:4px;
+			img {
+				padding:24px 6px;
 			}
 			p {
-				&:first-child {
-					&:first-letter {
-						@include fs;
-						margin:0px;
-						float:inherit;
-						padding:0px;
-						text-transform:inherit;
-						color:inherit;
-					}
-				}
+				margin:0px;
+				font-style:italic;
 			}
 		}
 		blockquote {
@@ -227,6 +206,49 @@
 
 :not(pre) > code[class*="language-"] {
 	color:#905;
+}
+
+.example-row {
+	@include box-shadow(2px 2px 12px -4px #777 inset);
+	@include box-sizing(border-box);
+	@include border-radius(2px);
+	padding:10px;
+	margin:15px 0px;
+	pre[class*="language-"] {
+		margin:0px;
+	}
+	.code-block, .code-ignore {
+		@include nested-reset;
+		@include body;
+		h1, h2, h3, h4, h5, h6 {
+			color:#333333;
+		}
+		h1 {
+			@include fs-xxlg;
+		}
+		h2 {
+			@include fs-xlg;
+			text-transform:none;
+		}
+		h3 {
+			@include fs-lg;
+		}
+		h4 {
+			@include fs;
+		}
+		p {
+			&:first-child {
+				&:first-letter {
+					@include fs;
+					margin:0px;
+					float:inherit;
+					padding:0px;
+					text-transform:inherit;
+					color:inherit;
+				}
+			}
+		}
+	}
 }
 
 /* EXAMPLES IN POSTS */

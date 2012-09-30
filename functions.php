@@ -174,7 +174,7 @@ case 'textareacode': ?>
 }
 
 function themeoptions_admin_menu()  {
-    $themename = "University Daily Kansan";
+    $themename = "UDK Workshop";
     $shortname = "udk_";
     add_theme_page($themename." Options", "".$themename." Options", 'edit_themes', basename(__FILE__), 'mytheme_admin');
 }
@@ -195,7 +195,7 @@ function example_shortcode( $atts, $content = null ) {
         $code_and_example = '<div class="span12">'.$code.'</div>';
     }
     return '
-    <div class="row-fluid clearfix">'.$code_and_example.'</div>';
+    <div class="row-fluid example-row clearfix">'.$code_and_example.'</div>';
 }
 add_shortcode( 'example', 'example_shortcode' );
 ?>
