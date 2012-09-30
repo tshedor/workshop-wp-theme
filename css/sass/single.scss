@@ -210,12 +210,11 @@
 }
 
 .example-row {
-	@include box-shadow(1px 2px 9px -2px black inset);
+	@include box-shadow(1px 2px 9px -2px #7A7A7A inset);
 	@include box-sizing(border-box);
 	@include border-radius(2px);
 	padding:10px;
 	margin:15px 0px;
-	background:#DFE4EC;
 	pre[class*="language-"] {
 		margin:0px;
 	}
