@@ -130,18 +130,19 @@
 				padding-left:0px;
 			}
 			float:left;
-			padding:7px 6px;
+			padding:7px 0px;
 			@include fs-medium;
 			font-weight:300;
 			letter-spacing:2px;
 			&:after {
 				content:'/';
-				padding:0px 4px;
+				padding:0px 8px;
 			}
 			&:last-child{
 				&:after {
 					content:'';
 					padding:0px;
+					color:#B3D5FF;
 				}
 			}
 			a {
