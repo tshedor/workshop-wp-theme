@@ -134,6 +134,16 @@
 			@include fs-medium;
 			font-weight:300;
 			letter-spacing:2px;
+			&:after {
+				content:'/';
+				padding:0px 4px;
+			}
+			&:last-child{
+				&:after {
+					content:'';
+					padding:0px;
+				}
+			}
 			a {
 				color:#9C9C9C;
 				&:hover {

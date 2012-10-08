@@ -26,7 +26,7 @@
 			</noscript>
 		</div>
 	<div class="row-fluid clearfix">
-		<div class="span12">
+		<div class="span10">
 			<div class="footer">
 				<div class="row-fluid">
 					<?php wp_nav_menu(array( 'theme_location' => 'footer_menu', 'container' => '', 'items_wrap' => '<ul class="global-links hidden-phone clearfix">%3$s</ul>', )); ?>
@@ -37,7 +37,7 @@
 					</div>
 					<div class="span6">
 						<div class="copyright">
-							&copy; Copyright <a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?>"><?php bloginfo('name') ?></a> <?php echo date('Y'); ?>
+							&copy; Copyright Tim Shedor <?php echo date('Y') ?> | <a href="<?php bloginfo('url') ?>" title="<?php bloginfo('name') ?>"><?php bloginfo('name') ?></a>
 						</div>
 					</div>
 				</div>
