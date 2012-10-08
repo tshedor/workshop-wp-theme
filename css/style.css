@@ -36,8 +36,8 @@
 .global-links { margin-left: 0px; list-style: none; }
 .global-links li { float: left; padding: 7px 0px; font-size: 14.4px; font-weight: 300; letter-spacing: 2px; }
 .global-links li:first-child { padding-left: 0px; }
-.global-links li:after { content: '/'; padding: 0px 8px; }
-.global-links li:last-child:after { content: ''; padding: 0px; color: #B3D5FF; }
+.global-links li:after { content: '/'; padding: 0px 8px; color: #B3D5FF; }
+.global-links li:last-child:after { content: ''; padding: 0px; }
 .global-links li a { color: #9C9C9C; }
 .global-links li a:hover { color: #358ccb; }
 

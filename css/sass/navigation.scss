@@ -137,12 +137,12 @@
 			&:after {
 				content:'/';
 				padding:0px 8px;
+				color:#B3D5FF;
 			}
 			&:last-child{
 				&:after {
 					content:'';
 					padding:0px;
-					color:#B3D5FF;
 				}
 			}
 			a {
