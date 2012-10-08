@@ -33,7 +33,8 @@
 }
 .post {	
 	h1 {
-		margin:46px 0px;
+		margin:0px;
+		margin-bottom:46px;
 		font-weight:300;
 		color:$blue;
 	}
@@ -114,6 +115,36 @@
 		font-weight:bold;
 		float:left;
 		padding-right:5px;
+	}
+}
+.for-more, .possum {
+	padding:0px 10px;
+	@include box-sizing(border-box);
+	max-width:320px;
+	width:auto;
+	background:#f8f8f8;
+	@include box-shadow(2px 2px 1px 0px #ccc inset);
+	float:left;
+	min-width:220px;
+	text-align:right;
+	position:relative;
+	h2 {
+		background:url('asterisk.svg') no-repeat left center;
+		background-size:24px 50px;
+		color:$orange;
+		text-transform:none;
+		@include fs-xlg;
+		padding:10px 0px;
+		padding-left:30px;
+		margin:0px;
+	}
+	ul {
+		@include no-list;
+		margin-left:30px;
+		padding-bottom:8px;
+		li {
+			line-height:26px;
+		}
 	}
 }
 .post_excerpt { 

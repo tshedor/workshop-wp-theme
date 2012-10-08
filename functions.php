@@ -198,4 +198,18 @@ function example_shortcode( $atts, $content = null ) {
     <div class="row-fluid example-row clearfix">'.$code_and_example.'</div>';
 }
 add_shortcode( 'example', 'example_shortcode' );
-?>
+
+function possum_shortcode( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'target' => '',
+    ), $atts ) );
+    $clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $target);
+    $clean = strtolower(trim($clean, '_'));
+    $clean = preg_replace("/[\/_|+ -]+/", '_', $clean);
+    $possum = '<div class="possum" data-role="possum" id="'.$clean.'_'.get_the_ID().'">
+        <h2>Curious?</h2>'.
+        strip_tags($content,'<a><ul><li>').'
+    </div>';
+    return $possum;
+}
+add_shortcode( 'possum', 'possum_shortcode' ); ?>

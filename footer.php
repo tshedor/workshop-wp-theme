@@ -48,6 +48,7 @@
 </div>
 </div>
 </div>
+<script src="<?php bloginfo('template_directory') ?>/js/udkworkshops.min.js" type="text/javascript"></script>
 <!--[if lt IE 9]>
 	<script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<script type="text/javascript" src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
