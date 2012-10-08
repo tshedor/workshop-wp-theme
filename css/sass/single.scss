@@ -281,6 +281,7 @@
 				}
 			}
 		}
+		@include text-shadow(none);
 	}
 }
 
@@ -330,9 +331,6 @@ h1 {
 	color:#E9F402;
 	font-family:'wild_rideregular', Helvetica, script;
 	top:80px;
-	/* -webkit-text-fill-color:#E9F402;
-	-webkit-text-stroke:4px #5D0A0B;
-	text-shadow:4px -2px #5D0A0B, -5px 3px #5D0A0B, -1px 4px #5D0A0B, -1px -4px #5D0A0B, 4px 1px #5D0A0B; */
 	letter-spacing: -1px;
 	margin:0px;
 	font-weight:lighter;
@@ -362,4 +360,7 @@ h1:after {
 	margin-top:120px;
 	margin-right:5px;
 }
+}
+.label, .badge {
+	font-size:14px;
 }
