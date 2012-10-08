@@ -21,7 +21,7 @@
 		<?php } ?>
 			
 		<?php $count = 0;
-		query_posts('order=ASC');
+		query_posts('order=ASC&cat='.get_query_var('cat'));
 		while (have_posts()) : the_post();
 		get_template_part( 'loop', 'single' );
 	endwhile; endif;
