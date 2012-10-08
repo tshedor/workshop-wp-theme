@@ -117,7 +117,7 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 .no-left-margin { margin-left: 0px; top: 15px; position: relative; }
 
 /******** HOME ************/
-.mast { color: #7eb6de; text-transform: uppercase; letter-spacing: 18px; font-weight: 300; margin: 80px 0px; margin-bottom: 0px; }
+.mast { color: #7eb6de; text-transform: uppercase; letter-spacing: 18px; font-weight: 300; margin: 0px; }
 
 .tagline { color: #b9b9b9; text-transform: none; font-weight: 300; margin-bottom: 60px; }
 
