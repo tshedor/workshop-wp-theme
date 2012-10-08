@@ -185,7 +185,7 @@ function example_shortcode( $atts, $content = null ) {
         'just_code' => 'false',
         'lang' => 'markup',
     ), $atts ) );
-    $code = strip_tags($content, '<a><img><div><body><html><head><script><style><h1><h2><h3><h4><h5><h6><hr><video><audio><ul><ol><li><table><tbody><tr><td><th><link><strong><em><code><pre><span><embed><b><i><dd><dt><dl><blockquote><header><footer><article><aside><form><input><textarea><button><section><address><cite><embed><object>');
+    $code = strip_tags($content, '<!doctype><a><img><div><body><html><head><script><style><h1><h2><h3><h4><h5><h6><hr><video><audio><ul><ol><li><table><tbody><tr><td><th><link><strong><em><code><pre><span><embed><b><i><dd><dt><dl><blockquote><header><footer><article><aside><form><input><textarea><button><section><address><cite><embed><object>');
     $code = str_replace('<p>', '', $code);
     $code = str_replace('</p>', '', $code);
     $code = str_replace('<', '&lt;', $code);
@@ -208,7 +208,7 @@ function possum_shortcode( $atts, $content = null ) {
     $clean = preg_replace("/[\/_|+ -]+/", '_', $clean);
     $possum = '<div class="possum" data-role="possum" id="'.$clean.'_'.get_the_ID().'">
         <h2>Curious?</h2>'.
-        strip_tags($content,'<a><ul><li>').'
+        strip_tags($content,'<a><ul><li><img><strong><em>').'
     </div>';
     return $possum;
 }

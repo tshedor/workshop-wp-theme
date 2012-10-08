@@ -1,73 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="87.1428571429px" height="100px" viewBox="0 0 122.16 140.16" enable-background="new 0 0 122.16 140.16" xml:space="preserve" style="fill:#BE1D1D">
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="87.143px" height="100px" viewBox="0 0 87.143 100" enable-background="new 0 0 87.143 100" xml:space="preserve">
 <g id="Group_1_copy_1_">
 	<g id="Shape_1">
 		<g>
-			<circle fill-rule="evenodd" clip-rule="evenodd" cx="62.073" cy="22.074" r="14.949"/>
+			<circle fill="#BE1D1D" cx="44.28" cy="15.755" r="10.664"/>
 		</g>
 	</g>
 	<g id="Shape_2">
 		<g>
-			<polygon fill-rule="evenodd" clip-rule="evenodd" points="47.115,24.657 62.069,71.953 77.023,24.657    "/>
+			<polygon fill="#BE1D1D" points="33.61,17.598 44.277,51.336 54.945,17.598 			"/>
 		</g>
 	</g>
 </g>
 <g id="Group_1_copy_2_1_">
 	<g id="Shape_1_1_">
 		<g>
-			<circle fill-rule="evenodd" clip-rule="evenodd" cx="62.073" cy="121.206" r="14.949"/>
+			<circle fill="#BE1D1D" cx="44.28" cy="86.471" r="10.664"/>
 		</g>
 	</g>
 	<g id="Shape_2_1_">
 		<g>
-			<polygon fill-rule="evenodd" clip-rule="evenodd" points="62.069,71.327 47.115,118.623 77.023,118.623    "/>
+			<polygon fill="#BE1D1D" points="44.277,50.89 33.61,84.628 54.945,84.628 			"/>
 		</g>
 	</g>
 </g>
 <g id="Group_1_copy_3_1_">
 	<g id="Shape_1_2_">
 		<g>
-			<circle fill-rule="evenodd" clip-rule="evenodd" cx="103.768" cy="98.34" r="14.949"/>
+			<circle fill="#BE1D1D" cx="74.023" cy="70.16" r="10.664"/>
 		</g>
 	</g>
 	<g id="Shape_2_2_">
 		<g>
-			<polygon fill-rule="evenodd" clip-rule="evenodd" points="61.888,71.249 93.475,109.496 109.721,84.386    "/>
+			<polygon fill="#BE1D1D" points="44.148,50.834 66.68,78.117 78.27,60.205 			"/>
 		</g>
 	</g>
 </g>
 <g id="Group_1_copy_4_1_">
 	<g id="Shape_1_3_">
 		<g>
-			<circle fill-rule="evenodd" clip-rule="evenodd" cx="103.768" cy="44.699" r="14.949"/>
+			<circle fill="#BE1D1D" cx="74.023" cy="31.895" r="10.664"/>
 		</g>
 	</g>
 	<g id="Shape_2_3_">
 		<g>
-			<polygon fill-rule="evenodd" clip-rule="evenodd" points="93.475,33.543 61.888,71.791 109.721,58.655    "/>
+			<polygon fill="#BE1D1D" points="66.68,23.937 44.148,51.221 78.27,41.85 			"/>
 		</g>
 	</g>
 </g>
 <g id="Group_1_copy_5_1_">
 	<g id="Shape_1_4_">
 		<g>
-			<circle fill-rule="evenodd" clip-rule="evenodd" cx="20.552" cy="44.7" r="14.949"/>
+			<circle fill="#BE1D1D" cx="14.66" cy="31.895" r="10.664"/>
 		</g>
 	</g>
 	<g id="Shape_2_4_">
 		<g>
-			<polygon fill-rule="evenodd" clip-rule="evenodd" points="30.846,33.543 14.6,58.655 62.433,71.791    "/>
+			<polygon fill="#BE1D1D" points="22.004,23.937 10.415,41.85 44.536,51.221 			"/>
 		</g>
 	</g>
 </g>
 <g id="Group_1_copy_6_1_">
 	<g id="Shape_1_5_">
 		<g>
-			<circle fill-rule="evenodd" clip-rule="evenodd" cx="20.552" cy="98.34" r="14.949"/>
+			<circle fill="#BE1D1D" cx="14.66" cy="70.16" r="10.664"/>
 		</g>
 	</g>
 	<g id="Shape_2_5_">
 		<g>
-			<polygon fill-rule="evenodd" clip-rule="evenodd" points="14.6,84.386 30.846,109.496 62.433,71.249    "/>
+			<polygon fill="#BE1D1D" points="10.415,60.205 22.004,78.117 44.536,50.834 			"/>
 		</g>
 	</g>
 </g>

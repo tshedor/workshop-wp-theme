@@ -205,7 +205,7 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 .for-more, .possum { padding: 0px 10px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; max-width: 320px; width: auto; background: #f8f8f8; -webkit-box-shadow: 2px 2px 1px 0px #cccccc inset; -moz-box-shadow: 2px 2px 1px 0px #cccccc inset; box-shadow: 2px 2px 1px 0px #cccccc inset; float: left; min-width: 220px; text-align: right; position: relative; }
 .for-more h2, .possum h2 { background: url("asterisk.svg") no-repeat left center; background-size: 24px 50px; color: #e29532; text-transform: none; font-size: 25.6px; line-height: 26px; padding: 10px 0px; padding-left: 30px; margin: 0px; }
 .for-more ul, .possum ul { margin-left: 0px; list-style: none; margin-left: 30px; padding-bottom: 8px; }
-.for-more ul li, .possum ul li { line-height: 26px; }
+.for-more ul li, .possum ul li { margin: 6px 0px; }
 
 .post_excerpt h3 { color: inherit; }
 .post_excerpt h3 a { color: #358ccb; }
@@ -245,6 +245,8 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 .example-row .code-block q, .example-row .code-block blockquote, .example-row .code-ignore q, .example-row .code-ignore blockquote { quotes: none; }
 .example-row .code-block q:before, .example-row .code-block q:after, .example-row .code-block blockquote:before, .example-row .code-block blockquote:after, .example-row .code-ignore q:before, .example-row .code-ignore q:after, .example-row .code-ignore blockquote:before, .example-row .code-ignore blockquote:after { content: ""; content: none; }
 .example-row .code-block a img, .example-row .code-ignore a img { border: none; }
+.example-row .code-block strong, .example-row .code-ignore strong { font-weight: bold; }
+.example-row .code-block em, .example-row .code-ignore em { font-style: italic; }
 .example-row .code-block h1, .example-row .code-block h2, .example-row .code-block h3, .example-row .code-block h4, .example-row .code-block h5, .example-row .code-block h6, .example-row .code-ignore h1, .example-row .code-ignore h2, .example-row .code-ignore h3, .example-row .code-ignore h4, .example-row .code-ignore h5, .example-row .code-ignore h6 { color: #333333; }
 .example-row .code-block h1, .example-row .code-ignore h1 { font-size: 38.4px; }
 .example-row .code-block h2, .example-row .code-ignore h2 { font-size: 25.6px; line-height: 26px; text-transform: none; }
