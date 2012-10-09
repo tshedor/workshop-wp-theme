@@ -192,10 +192,10 @@ function example_shortcode( $atts, $content = null ) {
     $code = '<pre><code class="language-'.$lang.'">'.$code.'</code></pre>';
     $code_and_example = '<div class="span6 code-block">'.$content.'</div><div class="span6">'.$code.'</div>';
     if($just_code == 'true'){
-        $code_and_example = '<div class="span12">'.$code.'</div>';
+        return '<div class="row-fluid clearfix"><div class="span12 full-code">'.$code.'</div></div>';
+    } else {
+        return '<div class="row-fluid example-row clearfix">'.$code_and_example.'</div>';
     }
-    return '
-    <div class="row-fluid example-row clearfix">'.$code_and_example.'</div>';
 }
 add_shortcode( 'example', 'example_shortcode' );
 

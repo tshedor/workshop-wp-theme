@@ -5,9 +5,9 @@
  * @author Lea Verou
  */
 
- $default: #0062B3;
- $secondary: adjust-hue($default, 120deg);
- $tertiary: adjust-hue($default, -120deg);
+ $default: #E74646;
+ $secondary: #2F9C0A;
+ $tertiary: #1990B8;
  $quad: adjust-hue($default, 192deg);
  $pent: adjust-hue($default, -192deg);
 
@@ -30,7 +30,8 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
-	//overflow: auto;	
+	//overflow: auto;
+	@include box-shadow(-1px 0px 0px 0px $blue, 0px 0px 0px 1px #DFDFDF);
 	border-left:10px solid $blue;
 }
 
@@ -38,19 +39,20 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	background: #fdfdfd;
 	@include box-sizing(border-box);
-	@include lifted-shadow(both, 3deg);
 	margin-bottom:20px;
+}
+
+
+.full-code :not(pre) > code[class*="language-"],
+.full-code pre[class*="language-"] {
+	@include lifted-shadow(both, 2deg);
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
+	padding: .2em;
 	@include border-radius(.3em);
 	color:$default;
-	@include box-shadow(none);
-	&:before, &:after {
-		@include box-shadow(none)
-	}
 	border:1px solid rgba(black, 0.1%);
 }
 .token {
@@ -150,10 +152,12 @@ pre[data-line] {
 
 .example-row {
 	@include box-shadow(1px 2px 9px -2px #7A7A7A inset);
+	//@include box-shadow(0px 2px 3px 0px #7A7A7A);
 	@include box-sizing(border-box);
+	//background:#fdfdfd;
 	@include border-radius(2px);
 	padding:10px;
-	margin:60px 0px;
+	margin:40px 0px;
 	pre[class*="language-"] {
 		margin:0px;
 	}
