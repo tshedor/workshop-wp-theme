@@ -195,8 +195,8 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 .post .entry p { font-size: 16px; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 400; line-height: 23px; -webkit-margin-before: 0px; -webkit-margin-after: 0px; margin: 22px 0px; }
 .post .entry p:first-child:first-letter { text-transform: uppercase; padding-right: 2px; font-size: 38.4px; float: left; margin-top: 9px; margin-right: 5px; color: #b9b9b9; }
 .post .entry p.final-byline { font-style: italic; }
-.post .entry .wp-caption { -webkit-box-shadow: 2px 2px 12px -4px #777777 inset; -moz-box-shadow: 2px 2px 12px -4px #777777 inset; box-shadow: 2px 2px 12px -4px #777777 inset; padding: 6px; background: #E6E6E6; }
-.post .entry .wp-caption img { padding: 12px 6px; }
+.post .entry .wp-caption { -webkit-box-shadow: 0px 1px 2px 0px #777777; -moz-box-shadow: 0px 1px 2px 0px #777777; box-shadow: 0px 1px 2px 0px #777777; padding: 5px; background: #ffffff; border: 1px solid #dfdfdf; }
+.post .entry .wp-caption img { margin: 6px; border: 2px solid #dfdfdf; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .post .entry .wp-caption p { margin: 0px; font-style: italic; text-align: center; }
 .post .entry blockquote p:first-child:first-letter { text-transform: none; padding-right: 0px; font-size: inherit; float: inherit; margin-top: inherit; margin-right: inherit; }
 .post ul { margin-left: 45px; }
