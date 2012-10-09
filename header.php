@@ -70,5 +70,5 @@
 				<?php wp_nav_menu(array( 'theme_location' => 'top_menu', 'container' => '', 'items_wrap' => '<ul>%3$s</ul>', )); ?>
 			</div>
 		</div>
-		<div class="span10">
+		<div class="span10" style="margin-left:8%; width:77%">
 

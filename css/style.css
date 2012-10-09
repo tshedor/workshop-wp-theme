@@ -45,7 +45,7 @@
 /********* GENERAL ***********/
 h1, h2, h3, h4, h5, h6, h7, h8 { font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: normal; color: #358ccb; font-weight: normal; text-shadow: #fafafa 0px 1px 0px; }
 
-h2 { color: #812020; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; font-weight: 300; font-size: 25.6px; line-height: 26px; margin: 20px 0px; }
+h2 { color: #409fb1; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; font-weight: 300; font-size: 25.6px; line-height: 26px; margin: 20px 0px; }
 
 h3 { color: #e29532; }
 
@@ -263,11 +263,11 @@ pre[class*="language-"] { padding: 1em; margin: .5em 0; -webkit-box-shadow: -1px
 .full-code :not(pre) > code[class*="language-"]:after, .full-code pre[class*="language-"]:after { right: 10px; left: auto; -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg); -ms-transform: rotate(2deg); -o-transform: rotate(2deg); transform: rotate(2deg); visibility: visible!important; height: 20%!important; }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] { padding: .2em; -webkit-border-radius: 0.3em; -moz-border-radius: 0.3em; -ms-border-radius: 0.3em; -o-border-radius: 0.3em; border-radius: 0.3em; color: #e74646; border: 1px solid rgba(0, 0, 0, 0.1); }
+:not(pre) > code[class*="language-"] { padding: .2em; -webkit-border-radius: 0.3em; -moz-border-radius: 0.3em; -ms-border-radius: 0.3em; -o-border-radius: 0.3em; border-radius: 0.3em; color: #c92c2c; border: 1px solid rgba(0, 0, 0, 0.1); }
 
 .token.comment, .token.prolog, .token.doctype, .token.cdata { color: slategray; }
 .token.punctuation { color: #999; }
-.token.property, .token.tag, .token.boolean, .token.number { color: #e74646; }
+.token.property, .token.tag, .token.boolean, .token.number { color: #c92c2c; }
 .token.selector, .token.attr-name, .token.string { color: #2f9c0a; }
 .token.operator, .token.entity, .token.url { color: #a67f59; background: rgba(255, 255, 255, 0.5); }
 .token.atrule, .token.attr-value, .token.keyword { color: #1990b8; }
