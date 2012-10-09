@@ -261,15 +261,15 @@ pre[class*="language-"] { padding: 1em; margin: .5em 0; border-left: 10px solid 
 :not(pre) > code[class*="language-"]:after, pre[class*="language-"]:after { right: 10px; left: auto; -webkit-transform: rotate(3deg); -moz-transform: rotate(3deg); -ms-transform: rotate(3deg); -o-transform: rotate(3deg); transform: rotate(3deg); visibility: visible!important; height: 20%!important; }
 
 /* Inline code */
-:not(pre) > code[class*="language-"] { padding: .1em; -webkit-border-radius: 0.3em; -moz-border-radius: 0.3em; -ms-border-radius: 0.3em; -o-border-radius: 0.3em; border-radius: 0.3em; color: #ee7b11; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 1px solid rgba(0, 0, 0, 0.1); }
+:not(pre) > code[class*="language-"] { padding: .1em; -webkit-border-radius: 0.3em; -moz-border-radius: 0.3em; -ms-border-radius: 0.3em; -o-border-radius: 0.3em; border-radius: 0.3em; color: #0062b3; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; border: 1px solid rgba(0, 0, 0, 0.1); }
 :not(pre) > code[class*="language-"]:before, :not(pre) > code[class*="language-"]:after { -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 .token.comment, .token.prolog, .token.doctype, .token.cdata { color: slategray; }
 .token.punctuation { color: #999; }
-.token.property, .token.tag, .token.boolean, .token.number { color: #ee7b11; }
-.token.selector, .token.attr-name, .token.string { color: #11ee7b; }
+.token.property, .token.tag, .token.boolean, .token.number { color: #0062b3; }
+.token.selector, .token.attr-name, .token.string { color: #b30062; }
 .token.operator, .token.entity, .token.url { color: #a67f59; background: rgba(255, 255, 255, 0.5); }
-.token.atrule, .token.attr-value, .token.keyword { color: #7b11ee; }
+.token.atrule, .token.attr-value, .token.keyword { color: #62b300; }
 .token.regex, .token.important { color: #e90; }
 .token.important { font-weight: bold; }
 .token.entity { cursor: help; }
