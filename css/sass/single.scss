@@ -127,7 +127,8 @@
 	float:left;
 	min-width:220px;
 	text-align:right;
-	position:relative;
+	position:absolute;
+	right:30px;
 	h2 {
 		background:url('asterisk.png') no-repeat left center;
 		background-size:32px;
