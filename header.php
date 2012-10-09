@@ -31,7 +31,6 @@
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/bootstrap.min.css" type="text/css"/>
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/prism.css" type="text/css"/>
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css" type="text/css" />
 
 	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>

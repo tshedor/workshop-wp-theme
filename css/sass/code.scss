@@ -1,0 +1,199 @@
+/******** CODE STYLING *********/
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+ $default: #EE7B11;
+ $secondary: adjust-hue($default, 120deg);
+ $tertiary: adjust-hue($default, -120deg);
+ $quad: adjust-hue($default, 192deg);
+ $pent: adjust-hue($default, -192deg);
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;	
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+	@include hyphens(none);
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	//overflow: auto;	
+	border-left:10px solid $blue;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #fdfdfd;
+	@include box-sizing(border-box);
+	@include lifted-shadow(both, 3deg);
+	margin-bottom:20px;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	@include border-radius(.3em);
+	color:$default;
+	@include box-shadow(none);
+	&:before, &:after {
+		@include box-shadow(none)
+	}
+	border:1px solid rgba(black, 0.1%);
+}
+.token {
+	&.comment, &.prolog, &.doctype, &.cdata {
+		color: slategray;
+	}
+	&.punctuation {
+		color: #999;
+	}
+	&.property, &.tag, &.boolean, &.number {
+		color:$default;
+	}
+	&.selector, &.attr-name, &.string {
+		color: $secondary;
+	}
+	&.operator, &.entity, &.url {
+		color: #a67f59;
+		background: hsla(0,0%,100%,.5);
+	}
+	&.atrule, &.attr-value, &.keyword {
+		color: $tertiary;
+	}
+	&.regex, &.important {
+		color: #e90;
+	}
+	&.important {
+		font-weight: bold;
+	}
+	&.entity {
+		cursor: help;
+	}
+	&.tab:not(:empty):before, &.cr:before, &.lf:before {
+		color: hsl(24, 20%, 85%);
+	}
+	&.tab:not(:empty):before {
+		content: '▸';
+	}
+	&.cr:before {
+		content: '␍';
+	}
+	&.lf:before {
+		content: '␊';
+	}
+	& a {
+		color: inherit;
+	}
+}
+
+.language-css .token.string, .style .token.string {
+	color: #a67f59;
+	background: hsla(0,0%,100%,.5);
+}
+.namespace {
+	opacity: .7;
+}
+
+
+pre[data-line] {
+	position: relative;
+	padding: 1em 0 1em 3em;
+}
+
+.line-highlight {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: inherit 0;
+	margin-top: 1em; /* Same as .prism’s padding-top */
+	background: hsla(24, 20%, 50%,.08);
+	@include background-image(linear-gradient(left, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0)));
+	pointer-events: none;
+	line-height: inherit;
+	white-space: pre;
+	&:before, &[data-end]:after {
+		content: attr(data-start);
+		position: absolute;
+		top: .4em;
+		left: .6em;
+		min-width: 1em;
+		padding: 0 .5em;
+		background-color: hsla(24, 20%, 50%,.4);
+		color: hsl(24, 20%, 95%);
+		font: bold 65%/1.5 sans-serif;
+		text-align: center;
+		vertical-align: .3em;
+		border-radius: 999px;
+		text-shadow: none;
+		@include box-shadow(0 1px white);
+	}
+	
+	&[data-end]:after {
+		content: attr(data-end);
+		top: auto;
+		bottom: .4em;
+	}
+}
+
+.example-row {
+	@include box-shadow(1px 2px 9px -2px #7A7A7A inset);
+	@include box-sizing(border-box);
+	@include border-radius(2px);
+	padding:10px;
+	margin:60px 0px;
+	pre[class*="language-"] {
+		margin:0px;
+	}
+	.code-block, .code-ignore {
+		@include nested-reset;
+		@include body;
+		strong {
+			font-weight:bold;
+		}
+		em {
+			font-style:italic;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			color:#333333;
+		}
+		h1 {
+			@include fs-xxlg;
+		}
+		h2 {
+			@include fs-xlg;
+			text-transform:none;
+		}
+		h3 {
+			@include fs-lg;
+		}
+		h4 {
+			@include fs;
+		}
+		p {
+			&:first-child {
+				&:first-letter {
+					@include fs;
+					margin:0px;
+					float:inherit;
+					padding:0px;
+					text-transform:inherit;
+					color:inherit;
+				}
+			}
+		}
+		@include text-shadow(none);
+	}
+}

@@ -50,47 +50,39 @@ $std-padding:20px;
 @mixin emboss {
 	@include text-shadow(-1px -1px 1px #fff, 1px 1px 1px #000);
 }
-@mixin spare-the-children($pos: left, $prop: both, $border: no) {
-	@if $pos == left {
-		&:first-child{
-			@if $prop == margin { margin-left:0px; }
-			@if $prop == padding { padding-left:0px; }
-			@if $border == border { border-left:0px; }
-			@if $prop == both { margin-left:0px; padding-left:0px; }
-		}
-		&:last-child{
-			@if $prop == margin { margin-right:0px; }
-			@if $prop == padding { padding-right:0px; }
-			@if $border == border { border-right:0px; }
-			@if $prop == both { margin-right:0px; padding-right:0px; }
+@mixin lifted-shadow($direction:both,$deg:5deg) {
+	//@include box-shadow(0 1px 4px rgba(0, 0, 0, 0.3));
+	position:relative;
+	&:before, &:after {
+		content:'';
+		z-index:-2;
+		position:absolute;
+		bottom:12px;
+		left:5px;
+		width:40%;
+		height:20%;
+		@include box-shadow(0px 17px 8px #979797);
+		@include transform(rotate(- $deg));
+	}
+	@if($direction == 'both') {
+		&:after {
+			right:10px;
+			left:auto;
+			@include transform(rotate($deg));
+			visibility:visible!important;
+			height:20%!important;
 		}
 	}
-	@if $pos == right {
-		&:first-child{
-			@if $prop == margin { margin-right:0px; }
-			@if $prop == padding { padding-right:0px; }
-			@if $border == border { border-right:0px; }
-			@if $prop == both { margin-right:0px; padding-right:0px; }		
-		}
-		&:last-child{
-			@if $prop == margin { margin-left:0px; }
-			@if $prop == padding { padding-left:0px; }
-			@if $border == border { border-left:0px; }
-			@if $prop == both { margin-left:0px; padding-left:0px; }
+	@if($direction == 'left') {
+		&:after {
+			@include box-shadow(none);
+			visibility:hidden;
 		}
 	}
-	@if $pos == every {
-		&:first-child{
-			@if $prop == margin { margin:0px; }
-			@if $prop == padding { padding:0px; }
-			@if $border == border { border:0px; }
-			@if $prop == both { margin:0px; padding:0px; }		
-		}
-		&:last-child{
-			@if $prop == margin { margin:0px; }
-			@if $prop == padding { padding:0px; }
-			@if $border == border { border:0px; }
-			@if $prop == both { margin:0px; padding:0px; }
+	@if($direction == 'right') {
+		&:before {
+			@include box-shadow(none);
+			visibility:visible;
 		}
 	}
 }

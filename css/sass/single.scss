@@ -237,60 +237,6 @@
 	}
 }
 
-:not(pre) > code[class*="language-"] {
-	color:#905;
-}
-
-.example-row {
-	@include box-shadow(1px 2px 9px -2px #7A7A7A inset);
-	@include box-sizing(border-box);
-	@include border-radius(2px);
-	padding:10px;
-	margin:60px 0px;
-	pre[class*="language-"] {
-		margin:0px;
-	}
-	.code-block, .code-ignore {
-		@include nested-reset;
-		@include body;
-		strong {
-			font-weight:bold;
-		}
-		em {
-			font-style:italic;
-		}
-		h1, h2, h3, h4, h5, h6 {
-			color:#333333;
-		}
-		h1 {
-			@include fs-xxlg;
-		}
-		h2 {
-			@include fs-xlg;
-			text-transform:none;
-		}
-		h3 {
-			@include fs-lg;
-		}
-		h4 {
-			@include fs;
-		}
-		p {
-			&:first-child {
-				&:first-letter {
-					@include fs;
-					margin:0px;
-					float:inherit;
-					padding:0px;
-					text-transform:inherit;
-					color:inherit;
-				}
-			}
-		}
-		@include text-shadow(none);
-	}
-}
-
 /* EXAMPLES IN POSTS */
 .supaswag {
 	background:green;
