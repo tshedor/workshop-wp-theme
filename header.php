@@ -63,6 +63,15 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
   </script>
+	<?php } if(is_home()){ ?>
+	<div class="row-fluid clearfix centered">
+		<h1 class="mast">
+			<?php bloginfo('name'); ?>
+		</h1>
+		<h2 class="tagline">
+			<?php bloginfo('description') ?>
+		</h2>
+	</div>
 	<?php } ?>
 	<div class="row-fluid clearfix">
 		<div class="span2 left-nav">

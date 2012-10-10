@@ -13,7 +13,7 @@ add_action( 'init', 'register_custom_menu' );
 require_once locate_template('/functions/view-count.php');
 require_once locate_template('/functions/thumbnails.php');
 
-$themename = "University Daily Kansan";
+$themename = "UDK Workshops";
 $shortname = "udk_";
 
 $options = array (
@@ -174,7 +174,7 @@ case 'textareacode': ?>
 }
 
 function themeoptions_admin_menu()  {
-    $themename = "UDK Workshop";
+    $themename = "UDK Workshops";
     $shortname = "udk_";
     add_theme_page($themename." Options", "".$themename." Options", 'edit_themes', basename(__FILE__), 'mytheme_admin');
 }
