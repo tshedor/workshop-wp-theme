@@ -265,7 +265,7 @@ pre[class*="language-"] { padding: 1em; margin: .5em 0; -webkit-box-shadow: -1px
 /* Inline code */
 :not(pre) > code[class*="language-"] { padding: .2em; -webkit-border-radius: 0.3em; -moz-border-radius: 0.3em; -ms-border-radius: 0.3em; -o-border-radius: 0.3em; border-radius: 0.3em; color: #c92c2c; border: 1px solid rgba(0, 0, 0, 0.1); }
 
-.token.comment, .token.prolog, .token.doctype, .token.cdata { color: slategray; }
+.token.comment, .token.prolog, .token.doctype, .token.cdata { color: #7D8B99; }
 .token.punctuation { color: #999; }
 .token.property, .token.tag, .token.boolean, .token.number { color: #c92c2c; }
 .token.selector, .token.attr-name, .token.string { color: #2f9c0a; }
