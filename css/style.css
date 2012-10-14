@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, h7, h8 { font-family: 'Source Sans Pro', Arial, Helvetic
 
 h2 { color: #409fb1; font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif; font-weight: 700; text-transform: uppercase; font-weight: 300; font-size: 25.6px; line-height: 26px; margin: 20px 0px; }
 
-h3 { color: #e29532; }
+h3 { color: #e29532; font-size: 21px; }
 
 h4 { color: #153852; }
 
