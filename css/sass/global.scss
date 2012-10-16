@@ -136,7 +136,7 @@ hr {
 	background:#B64040;
 	padding:6px;
 	@include border-radius(4px);
-	@include box-shadow(1px 2px 2px 1px #5a2a2a);
+	//@include box-shadow(1px 2px 2px 1px #5a2a2a);
 	strong {
 		color:#000;
 	}

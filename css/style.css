@@ -95,7 +95,7 @@ hr { border-color: #b9b9b9; border-bottom: 0px; }
 /******** ALERTS AND WARNINGS ********/
 .notice { display: none; font-size: 14.4px; }
 
-.alert { background: #B64040; padding: 6px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 1px 2px 2px 1px #5a2a2a; -moz-box-shadow: 1px 2px 2px 1px #5a2a2a; box-shadow: 1px 2px 2px 1px #5a2a2a; }
+.alert { background: #B64040; padding: 6px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
 .alert strong { color: #000; }
 .alert a { color: white; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .alert a:hover { color: #afd1ea; }

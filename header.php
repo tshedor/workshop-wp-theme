@@ -41,16 +41,6 @@
 </head>
 <body>
 
-		<?php if(get_option('udk_breaking_news_story') != "") { $p = get_post(get_option('udk_breaking_news_story'));
-			echo '<div class="row-fluid breaking-alert">
-				<div class="span12">
-					<div class="alert alert-error">
-						<button type="button" class="close" data-dismiss="alert">×</button>';
-						echo '<a href="'.get_permalink(get_option('udk_breaking_news_story')).'" title="'.$p->post_title.'"><strong>Breaking:</strong> '.$p->post_title.'</a>
-					</div>
-				</div>
-			</div>';
-		} ?>
 	<?php if(!is_user_logged_in()){ ?>
 	<script type="text/javascript">
   var _gaq = _gaq || [];
@@ -73,6 +63,14 @@
 		</h2>
 	</div>
 	<?php } ?>
+	<?php if(get_option('udk_breaking_news_story') != "") { $p = get_post(get_option('udk_breaking_news_story'));
+		echo '<div class="row-fluid clearfix breaking-alert">
+			<div class="alert alert-error">
+				<button type="button" class="close" data-dismiss="alert">×</button>';
+					echo '<a href="'.get_permalink(get_option('udk_breaking_news_story')).'" title="'.$p->post_title.'">'.$p->post_title.'</a>
+			</div>
+		</div>';
+	} ?>
 	<div class="row-fluid clearfix">
 		<div class="span2 left-nav">
 			<div class="primary-left">
