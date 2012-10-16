@@ -63,6 +63,14 @@
 		</h2>
 	</div>
 	<?php } ?>
+	<div class="row-fluid clearfix">
+		<div class="span2 left-nav">
+			<div class="primary-left">
+				<?php wp_nav_menu(array( 'theme_location' => 'top_menu', 'container' => '', 'items_wrap' => '<ul>%3$s</ul>', )); ?>
+			</div>
+		</div>
+		<div class="span10" style="margin-left:8%; width:77%">
+			
 	<?php if(get_option('udk_breaking_news_story') != "") { $p = get_post(get_option('udk_breaking_news_story'));
 		echo '<div class="row-fluid clearfix breaking-alert">
 			<div class="alert alert-error">
@@ -71,11 +79,4 @@
 			</div>
 		</div>';
 	} ?>
-	<div class="row-fluid clearfix">
-		<div class="span2 left-nav">
-			<div class="primary-left">
-				<?php wp_nav_menu(array( 'theme_location' => 'top_menu', 'container' => '', 'items_wrap' => '<ul>%3$s</ul>', )); ?>
-			</div>
-		</div>
-		<div class="span10" style="margin-left:8%; width:77%">
 
