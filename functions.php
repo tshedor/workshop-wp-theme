@@ -212,4 +212,20 @@ function possum_shortcode( $atts, $content = null ) {
     </div>';
     return $possum;
 }
-add_shortcode( 'possum', 'possum_shortcode' ); ?>
+add_shortcode( 'possum', 'possum_shortcode' ); 
+function warning_shortcode( $atts, $content = null ) {
+    extract( shortcode_atts( array(
+        'bonus' => false,
+        'tip' => false,
+    ), $atts ) );
+    if($bonus){
+        $wsc = '<span class="label label-success">Bonus</span>';
+    } elseif ($tip) {
+        $wsc = '<span class="label label-info">'.esc_attr($tip).'</span>';
+    } else {
+        $wsc = '<span class="label label-important">Heads up</span>';
+    }
+    return $wsc;
+}
+add_shortcode( 'warning', 'warning_shortcode' ); 
+?>
