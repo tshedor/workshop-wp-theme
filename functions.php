@@ -225,7 +225,7 @@ function warning_shortcode( $atts, $content = null ) {
     } else {
         $wsc = '<span class="label label-important">Heads up</span>';
     }
-    return $wsc;
+    return '<p>'.$wsc.' '.$content.'</p>';
 }
 add_shortcode( 'warning', 'warning_shortcode' ); 
 ?>
