@@ -85,11 +85,6 @@ a:hover { text-decoration: none; }
 .footer .link-list ul { margin-left: 0px; list-style: none; }
 .footer .link-list ul li { width: auto; }
 
-table { width: 100%; }
-table tr { padding: 5px 0px; }
-table tr:nth-child(even) { background: white; color: #cdcdcd; }
-table tr td { padding: 5px; }
-
 hr { border-color: #b9b9b9; border-bottom: 0px; }
 
 /******** ALERTS AND WARNINGS ********/

@@ -108,19 +108,6 @@ a {
 		}
 	}
 }
-table {
-	width:100%;
-	tr {
-		padding:$std-padding/4 0px;
-		&:nth-child(even){
-			background:lighten($lightest_gray,2%);
-			color:lighten($dark_gray,8%);
-		}
-		td {
-			padding:$std-padding/4;
-		}
-	}
-}
 hr {
 	border-color:$dark_gray;
 	border-bottom:0px;
