@@ -53,6 +53,11 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
   </script>
+  <script>
+  $(function(){
+  	$('[rel="tooltip"').tooltip();
+  });
+  </script>
 	<?php } if(is_home()){ ?>
 	<div class="row-fluid clearfix centered">
 		<h1 class="mast">
