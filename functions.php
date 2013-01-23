@@ -6,7 +6,7 @@ function register_custom_menu() {
 register_nav_menu('footer_menu', __('Footer Links'));
 register_nav_menu('top_menu', __('Main Navigation'));
 register_nav_menu('global_menu', __('Global Navigation'));
-} 
+}
 add_action( 'init', 'register_custom_menu' );
 
 function getPostViews($postID){
@@ -35,8 +35,8 @@ remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
-    add_image_size( 'archive_thumb', 261, 250, true ); 
-    add_image_size( 'feat_home', 360, 200, true ); 
+    add_image_size( 'archive_thumb', 261, 250, true );
+    add_image_size( 'feat_home', 360, 200, true );
 }
 
 function example_shortcode( $atts, $content = null ) {
@@ -71,7 +71,7 @@ function possum_shortcode( $atts, $content = null ) {
     </div>';
     return $possum;
 }
-add_shortcode( 'possum', 'possum_shortcode' ); 
+add_shortcode( 'possum', 'possum_shortcode' );
 function warning_shortcode( $atts, $content = null ) {
     extract( shortcode_atts( array(
         'bonus' => false,
@@ -86,5 +86,6 @@ function warning_shortcode( $atts, $content = null ) {
     }
     return '<p>'.$wsc.' '.$content.'</p>';
 }
-add_shortcode( 'warning', 'warning_shortcode' ); 
+add_shortcode( 'warning', 'warning_shortcode' );
+require_once(trailingslashit(get_template_directory()).'functions/possum-pt.php');
 ?>
