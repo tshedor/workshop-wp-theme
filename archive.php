@@ -2,7 +2,7 @@
 <div class="row-fluid">
 	<div class="span12">
 		<?php if(have_posts()) : ?>
-	
+
 		<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 		<?php /* If this is a category archive */ if (is_category()) { ?>
 		<h1 class="centered"><?php single_cat_title(); ?></h1>
@@ -19,11 +19,11 @@
 		<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 		<h1 class="centered">Blog Archives</h1>
 		<?php } ?>
-			
+
 		<?php $count = 0;
 		query_posts('order=ASC&cat='.get_query_var('cat'));
 		while (have_posts()) : the_post();
-		get_template_part( 'loop', 'single' );
+		get_template_part( 'functions/loop', 'single' );
 	endwhile; endif;
 
 get_footer(); ?>

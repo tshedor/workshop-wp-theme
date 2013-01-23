@@ -2,7 +2,7 @@
 	<div class="row-fluid clearfix">
 		<div class="span11">
 			<?php if(have_posts()) : while(have_posts()) : the_post();
-				get_template_part( 'loop', 'single' );
+				get_template_part( 'functions/loop', 'single' );
 				echo '<div id="comment-area">';
 				comments_template();
 				echo '</div>';

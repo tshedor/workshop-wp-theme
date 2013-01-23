@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 			<?php if(have_posts()) : while(have_posts()) : the_post();
-				get_template_part( 'loop', 'single' );
+				get_template_part( 'functions/loop', 'single' );
 			endwhile; endif;
 			?>
 <link href="<?php bloginfo('template_directory'); ?>/js/fancybox/jquery.fancybox.css" rel="stylesheet" />
