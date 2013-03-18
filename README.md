@@ -1,12 +1,15 @@
 #Workshop Wordpress Theme
 
-This theme was built for a few workshops I led in the Fall of 2012. It uses [Bootstrap](http://twitter.github.com/bootstrap/), [Sass](http://sass-lang.com/)/[Compass](http://compass-style.org/) and [Prism](http://prismjs.com/) primarily, although other open-source projects are in there like [fancybox](http://fancyapps.com/fancybox/) and [Source Sans](http://sourceforge.net/projects/sourcesans.adobe/). 
+This theme was built for a few workshops I led in the Fall of 2012. It uses [Bootstrap](http://twitter.github.com/bootstrap/), [Sass](http://sass-lang.com/)/[Compass](http://compass-style.org/) and [Prism](http://prismjs.com/) primarily, although other open-source projects are in there like [fancybox](http://fancyapps.com/fancybox/) and [Source Sans](http://sourceforge.net/projects/sourcesans.adobe/).
 
 ##Shortcodes
 
 * `[example]` - designates an example. Accepts `just_code` (`"true"`, default is `"false"`) and `lang` (`"css"`, `"javascript"` `"none"` default is `"markdown"`) arguments. Code can be unescaped inside the starting and closing tag
-* `[possum]` - designates a highlight for the sidebar. Set the `target` argument equal to the equivalent `h2` marker on the page. For example, if the extra link is related to `<h2>Hex Colors</h2>`, add `[possum target="Hex Colors"]` + Content + `[/possum]`.
 * `[warning]` - adds a label before a paragraph. Accepts `bonus=""` to display a green label with "Bonus" or blue label with `tip="TIPNAME"`. Defaults to "Heads up" as a red label. Wrap warning inside `[warning][/warning]`.
+
+##Related
+
+The custom post type adds links to to the sidebar. Add non-heirarchal tags on regular posts and related posts. To adjust the links accordingly to the relevant content, set the ID attribute in a tag to match the name of the Related Tag (on the post), just without spaces, i.e. `<h2 id="CSSColors">CSS Colors</h2>`.
 
 ##License
 

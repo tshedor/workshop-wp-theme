@@ -1,15 +1,15 @@
 <?php
-add_action('init', 'possum_register');
-function possum_register() {
+add_action('init', 'related_register');
+function related_register() {
 	$labels = array(
-		'name' => _x('Possums', 'post type general name'),
-		'singular_name' => _x('Possum Description', 'post type singular name'),
-		'add_new' => _x('Add New Description', 'possum item'),
-		'add_new_item' => __('Add New Possum Description'),
-		'edit_item' => __('Edit Possum Description'),
-		'new_item' => __('New Possum Description'),
-		'view_item' => __('View Possum Description'),
-		'search_items' => __('Search Possum Descriptions'),
+		'name' => _x('Relateds', 'post type general name'),
+		'singular_name' => _x('Related Link', 'post type singular name'),
+		'add_new' => _x('Add New Link', 'related item'),
+		'add_new_item' => __('Add New Related Link'),
+		'edit_item' => __('Edit Related Link'),
+		'new_item' => __('New Related Link'),
+		'view_item' => __('View Related Link'),
+		'search_items' => __('Search Related Links'),
 		'not_found' =>	__('Nothing found'),
 		'not_found_in_trash' => __('Nothing found in Trash'),
 		'parent_item_colon' => ''
@@ -27,29 +27,29 @@ function possum_register() {
 		'supports' => array('title')
 		);
 
-	register_post_type( 'possum' , $args );
+	register_post_type( 'related' , $args );
 
-	register_taxonomy("possum_tag", array("possum", "post"), array("hierarchical" => false, "label" => "Possum Tags", "singular_label" => "Possum Tag", "rewrite" => true));
+	register_taxonomy("related_tag", array("related", "post"), array("hierarchical" => false, "label" => "Related Tags", "singular_label" => "Related Tag", "rewrite" => true));
 add_action("init", "admin_init");
 
-register_post_type( 'possum' , $args );
+register_post_type( 'related' , $args );
 	flush_rewrite_rules();
 }
-function add_possum_meta_box() {
+function add_related_meta_box() {
 	add_meta_box(
-	'possum_meta_box', // $id
-	'Possum Information', // $title
-	'show_possum_meta_box', // $callback
-	'possum', // $page
+	'related_meta_box', // $id
+	'Related Information', // $title
+	'show_related_meta_box', // $callback
+	'related', // $page
 	'normal', // $context
 	'core'); // $priority
 }
-add_action('add_meta_boxes', 'add_possum_meta_box');
+add_action('add_meta_boxes', 'add_related_meta_box');
 // Field Array
-$prefix = 'possum_';
-$possum_meta_fields = array(
+$prefix = 'related_';
+$related_meta_fields = array(
 	array(
-		'label'	=> 'Possum URL',
+		'label'	=> 'Related URL',
 		'desc'	=> '',
 		'id'	=> $prefix.'url',
 		'type'	=> 'text'
@@ -62,14 +62,14 @@ $possum_meta_fields = array(
 	),
 );
 
-function show_possum_meta_box() {
-	global $possum_meta_fields, $post;
+function show_related_meta_box() {
+	global $related_meta_fields, $post;
 	// Use nonce for verification
-	 wp_nonce_field( basename( __FILE__ ), 'possum_meta_box_nonce' );
+	 wp_nonce_field( basename( __FILE__ ), 'related_meta_box_nonce' );
 	// Begin the field table and loop
 	echo '<table class="form-table">';
 	echo '<script src="'.get_template_directory_uri().'/functions/admin_fields.js"></script>';
-	foreach ($possum_meta_fields as $field) {
+	foreach ($related_meta_fields as $field) {
 		// get value of this field if it exists for this post
 		$meta = get_post_meta($post->ID, $field['id'], true);
 		// begin a table row with
@@ -86,11 +86,11 @@ function show_possum_meta_box() {
 	echo '</table>'; // end table
 }
 // Save the Data
-function save_possum_meta($post_id) {
-	global $possum_meta_fields;
+function save_related_meta($post_id) {
+	global $related_meta_fields;
 
 	// verify nonce
-	if ( !isset( $_POST['possum_meta_box_nonce'] )  || !wp_verify_nonce($_POST['possum_meta_box_nonce'], basename(__FILE__)))
+	if ( !isset( $_POST['related_meta_box_nonce'] )  || !wp_verify_nonce($_POST['related_meta_box_nonce'], basename(__FILE__)))
 		return $post_id;
 	// check autosave
 	if (defined('DOING_AUTOSAVE') && DOING_AUTOSAVE)
@@ -104,7 +104,7 @@ function save_possum_meta($post_id) {
 	}
 
 	// loop through fields and save the data
-	foreach ($possum_meta_fields as $field) {
+	foreach ($related_meta_fields as $field) {
 		if($field['type'] == 'tax_select') continue;
 		$old = get_post_meta($post_id, $field['id'], true);
 		$new = $_POST[$field['id']];
@@ -116,6 +116,6 @@ function save_possum_meta($post_id) {
 	} // enf foreach
 
 }
-add_action('save_post', 'save_possum_meta');
+add_action('save_post', 'save_related_meta');
 
 ?>

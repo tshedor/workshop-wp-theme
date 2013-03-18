@@ -3,9 +3,9 @@
 	padding:$std-margin 0px;
 	@include body;
 }
-.category, .tag_list { 
+.category, .tag_list {
 	@include dom;
-	text-transform:uppercase; 
+	text-transform:uppercase;
 	@include fs-small;
 	font-weight:700;
 	span {
@@ -31,7 +31,7 @@
 	@include box-sizing(border-box);
 	border-left:1px solid $lightest_gray;
 }
-.post {	
+.post {
 	h1 {
 		margin:0px;
 		margin-bottom:46px;
@@ -40,9 +40,9 @@
 	}
 	padding:20px;
 	padding-top:0px;
-	#meta { 
+	#meta {
 		@include no-list;
-		@include fs-small; 
+		@include fs-small;
 		color:$gray;
 		@include sub;
 		margin-bottom:$std-margin;
@@ -61,8 +61,8 @@
 		@include fs;
 		p {
 			@include fs;
-			@include body; 
-			line-height:23px; 
+			@include body;
+			line-height:23px;
 			-webkit-margin-before:0px;
 			-webkit-margin-after:0px;
 			margin:22px 0px;
@@ -71,9 +71,9 @@
 					text-transform:uppercase;
 					padding-right:2px;
 					@include fs-xxlg;
-					float:left; 
-					margin-top:9px; 
-					margin-right:5px; 
+					float:left;
+					margin-top:9px;
+					margin-right:5px;
 					color:$dark_gray;
 				}
 			}
@@ -120,7 +120,7 @@
 		padding-right:5px;
 	}
 }
-.for-more, .possum {
+.for-more, .related {
 	padding:0px 10px;
 	@include box-sizing(border-box);
 	max-width:320px;
@@ -151,10 +151,10 @@
 		}
 	}
 }
-.post_excerpt { 
-	h3 { 
-		color:inherit; 
-		a { 
+.post_excerpt {
+	h3 {
+		color:inherit;
+		a {
 			color:$blue;
 		}
 	}

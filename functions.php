@@ -58,20 +58,20 @@ function example_shortcode( $atts, $content = null ) {
 }
 add_shortcode( 'example', 'example_shortcode' );
 
-function possum_shortcode( $atts, $content = null ) {
+function related_shortcode( $atts, $content = null ) {
     extract( shortcode_atts( array(
         'target' => '',
     ), $atts ) );
     $clean = preg_replace("/[^a-zA-Z0-9\/_|+ -]/", '', $target);
     $clean = strtolower(trim($clean, '_'));
     $clean = preg_replace("/[\/_|+ -]+/", '_', $clean);
-    $possum = '<div class="possum" data-role="possum" id="'.$clean.'_'.get_the_ID().'">
+    $related = '<div class="related" data-role="related" id="'.$clean.'_'.get_the_ID().'">
         <h2>Curious?</h2>'.
         strip_tags($content,'<a><ul><li><img><strong><em>').'
     </div>';
-    return $possum;
+    return $related;
 }
-add_shortcode( 'possum', 'possum_shortcode' );
+add_shortcode( 'related', 'related_shortcode' );
 function warning_shortcode( $atts, $content = null ) {
     extract( shortcode_atts( array(
         'bonus' => false,
@@ -87,5 +87,5 @@ function warning_shortcode( $atts, $content = null ) {
     return '<p>'.$wsc.' '.$content.'</p>';
 }
 add_shortcode( 'warning', 'warning_shortcode' );
-require_once(trailingslashit(get_template_directory()).'functions/possum-pt.php');
+require_once(trailingslashit(get_template_directory()).'functions/related-pt.php');
 ?>

@@ -15,7 +15,7 @@
 		<?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
 		<h1 class="centered">Archive for <?php the_time('Y'); ?></h1>
 		<?php /* If this is an author archive */ } elseif (is_author()) { ?>
-		<h1 class="centered">Author Archive</h1>
+		<h1 class="centered">By <?php the_author_meta('display_name', get_query_var('author')); ?></h1>
 		<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 		<h1 class="centered">Blog Archives</h1>
 		<?php } ?>
